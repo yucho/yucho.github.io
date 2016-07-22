@@ -113,15 +113,16 @@ docpadConfig =
 
 
 	# =================================
-    # Plugin Configuration
+	# Plugin Configuration
 
-    # Configure Plugins
-    plugins:
+	# Configure Plugins
+	
+	plugins:
 
-        # Push source and generated site on the same repository
-        ghpages:
-            deployRemote: 'origin'
-        	deployBranch: 'master'
+		# Push source and generated site on the same repository
+		ghpages:
+			deployRemote: 'origin'
+			deployBranch: 'master'
 
 	# =================================
 	# Environments
