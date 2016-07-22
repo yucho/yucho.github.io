@@ -36,7 +36,8 @@
     "docpad-plugin-stylus": "~2.11.0"
   },
   "devDependencies": {
-    "docpad-plugin-livereload": "~2.6.1"
+    "docpad-plugin-livereload": "~2.7.1",
+    "git-hooks": "^1.1.0"
   },
   "main": "node_modules/.bin/docpad-server",
   "scripts": {

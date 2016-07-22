@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Display reminder to deploy generated output
+printf "
+[post-commit]
+Great!!! You've just committed changes. Now, don't forget to deploy it via:
+
+\033[95mdocpad deploy-ghpages --env static\033[0m
+
+"
