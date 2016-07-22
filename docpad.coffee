@@ -13,31 +13,39 @@ docpadConfig =
 		site:
 			# The production url of our website
 			# If not set, will default to the calculated site URL (e.g. http://localhost:9778)
-			url: "http://website.com"
+			url: "https://yuchoho.com"
 
 			# Here are some old site urls that you would like to redirect from
 			oldUrls: [
-				'www.website.com',
-				'website.herokuapp.com'
+				'www.yuchoho.com',
+				'github.yucho.io'
 			]
 
 			# The default title of our website
-			title: "Your Website"
+			title: "Astropolitan Project"
+
+			# The author(s) of our website
+			author: "Yucho Ho"
 
 			# The website description (for SEO)
 			description: """
-				When your website appears in search results in say Google, the text here will be shown underneath your website's title.
+				A very omnivorous website that talks just about everything.
 				"""
 
 			# The website keywords (for SEO) separated by commas
 			keywords: """
-				place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website
+				Yucho Ho, blog, engineer
 				"""
 
 			# The website's styles
 			styles: [
+				"""<!-- Fonts -->"""
+				'//fonts.googleapis.com/css?family=Raleway:400,300,600'
+				"""<!-- CSS -->"""
 				'/vendor/normalize.css'
 				'/vendor/h5bp.css'
+				'/vendor/skeleton.css'
+				'/vendor/custom.css'
 				'/styles/style.css'
 			]
 
@@ -51,6 +59,7 @@ docpadConfig =
 
 				'/vendor/log.js'
 				'/vendor/modernizr.js'
+				'/vendor/site.js'
 				'/scripts/script.js'
 			]
 
@@ -68,6 +77,11 @@ docpadConfig =
 			# if our document does not have it's own title, then we should just use the site's title
 			else
 				@site.title
+
+		# Get the prepared site/document author
+		getPreparedAuthor: ->
+			# if we have a document author, then we should use that, otherwise use the site's author
+			@document.author or @site.author
 
 		# Get the prepared site/document description
 		getPreparedDescription: ->
@@ -97,6 +111,17 @@ docpadConfig =
 		posts: ->
 			@getCollection('documents').findAllLive({relativeOutDirPath: 'posts'})
 
+
+	# =================================
+    # Plugin Configuration
+
+    # Configure Plugins
+    plugins:
+
+        # Push source and generated site on the same repository
+        ghpages:
+            deployRemote: 'origin'
+        	deployBranch: 'master'
 
 	# =================================
 	# Environments

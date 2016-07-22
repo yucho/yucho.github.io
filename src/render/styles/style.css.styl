@@ -1,0 +1,10 @@
+// Make header links obscure because underlines get too thick
+h1, h2, h3, h4, h5, h6
+	& a
+	/a.obscure-link
+		color #222 // same as text
+		text-decoration none
+h1, h2, h3, h4, h5, h6
+	& a:hover
+	/a.obscure-link:hover
+		color #0FA0CE

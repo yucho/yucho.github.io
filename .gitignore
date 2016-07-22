@@ -1,2 +1,6 @@
+# Node.js modules are defined in package.json and should always be loaded with
+# "docpad run" command
 node_modules/
+
+# Output directory created by DocPad
 out/

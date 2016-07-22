@@ -11,8 +11,12 @@
 
 	<!-- Site Properities -->
 	<title><%= @getPreparedTitle() %></title>
+	<meta name="author" content="<%= @getPreparedAuthor() %>" />
 	<meta name="description" content="<%= @getPreparedDescription() %>" />
 	<meta name="keywords" content="<%= @getPreparedKeywords() %>" />
+
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- DocPad Meta -->
 	<%- @getBlock('meta').toHTML() %>
@@ -22,18 +26,20 @@
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 </head>
-<body>
+<body<%- ' class=front' if @document.title is 'front' %>>
 	<!--[if lt IE 7]>
 	<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
 
-	<header>
-		<h1><a href="<%= @site.url %>"><%- @site.title %></a></h1>
-	</header>
-	<article>
-		<%- @content %>
-	</article>
-	<footer></footer>
+	<div class="container">
+		<header class="header">
+			<h2 class="title"><a href="<%= @site.url %>"><%- @site.title %></a></h2>
+		</header>
+		<article>
+			<%- @content %>
+		</article>
+		<footer></footer>
+	</div>
 
 	<!-- DocPad Scripts + Our Own -->
 	<%- @getBlock('scripts').add(@site.scripts).toHTML() %>

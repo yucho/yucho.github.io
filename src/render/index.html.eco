@@ -1,12 +1,21 @@
 ---
 layout: 'default'
+title: 'front'
 ---
 
-<ul>
-	<% for post in @getCollection('posts').sortArray(date: -1): %>
-	<li>
-		<h3><a href="<%= post.url %>"><%- post.title or post.name %></a></h3>
-		<%- post.description %>
-	</li>
-	<% end %>
-</ul>
+<table class="u-full-width">
+	<thead>
+		<tr>
+			<th>Date</th>
+			<th>Title</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% for post in @getCollection('posts').sortArray(date: -1): %>
+		<tr>
+			<td><time><%- post.date.toLocaleDateString() %></time></td>
+			<td><a href="<%= post.url %>"><%- post.title or post.name %></a></td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>
