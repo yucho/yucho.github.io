@@ -8,11 +8,12 @@ This website is built on [HTML5 Boilerplate](http://html5boilerplate.com/) skele
 
 1. [Install DocPad](https://github.com/bevry/docpad)
 
-1. Clone the project and run the server
+1. Clone the *source* branch and run the server
 
 	``` bash
-	git clone https://github.com/yucho/astropolitan-project
-	cd astropolitan-project
+	git clone -b source https://github.com/yucho/yucho.github.io.git
+	cd yucho.github.io
+	npm install
 	docpad run
 	```
 
