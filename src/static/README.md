@@ -1,10 +1,7 @@
 # [Astropolitan Project](http://yuchoho.com)
 [Yucho Ho](https://github.com/yucho)'s personal website
 
-<div class="flash flash-warn flash-with-icon">
-  <span class="octicon octicon-alert"></span>
-  This branch (**master**) consists of generated output that is unsuited for editing. Visit [source branch](https://github.com/yucho/yucho.github.io/tree/source) for useful source code.
-</div>
+**This branch (master) consists of generated output that is unsuited for editing. Visit [source branch](https://github.com/yucho/yucho.github.io/tree/source) for useful source code.**
 
 
 ## License
