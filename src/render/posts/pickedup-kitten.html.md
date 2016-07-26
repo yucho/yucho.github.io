@@ -12,7 +12,7 @@ A notorious sister of mine loves to buy pets and totally not clean up after them
 
 For example, out of the blue our hamster started twitching insanely like a scene in a horror movie and dropped dead. This happened back in high school years. We held it in our hands and rubbed, as if that would magically revive it. My sister wept all night. The cause of death was quite mysterious except in hindsight, I had sprayed and wiped the floor with a cleaner product an hour before the incident, and the hamster cage was near it… hmm.
 
-When I was 6, I fed a baby sparrow using a syringe, applied too much pressure, and tiny grains bursted open its furry throat. Pop! That was a trippy moment. Yellow grains oozed out from somewhere they were't supposed to.
+When I was 6, I fed a baby sparrow using a syringe, applied too much pressure, and tiny grains bursted open its furry throat. *Pop!* Oops. That was a trippy moment. Yellow grains oozed out from somewhere they were't supposed to.
 
 When I was 12, my family loved our Betta fish so much that we built a pond in the backyard. A wild duck ate it the following day. Has a good intention ever gone wrong?
 
@@ -30,7 +30,7 @@ Since the kitten was obviously undernourished, I bought a bunch of Pedigree meal
 
 I owned him for a month or so. During that period, my boring, empty room got filled with toy mice, cat tower, portable vacuum cleaner, cat toilet, bucket full of absorbent sand, scratch pads, bags of cat powder and food, prescription medicine from the veterinary, DSLR camera, and SD card full of cat videos.
 
-I named him *Big Boss* because I had a terrible taste for names, and [Metal Gear Solid V](https://en.wikipedia.org/wiki/Metal_Gear_Solid_V:_Ground_Zeroes) were just released. I printed out flyers to look for a new adopter. Why didn’t I keep Big Boss? Well, the house was my aunt’s and she had (rightfully) zero confidence in our ability to fulfill responsibility. And my track record kinda sucks when it comes to pets.
+I named him *Big Boss* because I had a terrible taste for names, and [Metal Gear Solid V](https://en.wikipedia.org/wiki/Metal_Gear_Solid_V:_Ground_Zeroes) was just released. I printed out flyers to look for a new adopter. Why didn’t I keep Big Boss? Well, the house was my aunt’s and she had (rightfully) zero confidence in our ability to fulfill responsibility. And my track record kinda sucks when it comes to pets.
 
 Eventually the news traveled, and my ex-housemate’s relative’s friend’s daughter (and her husband) came over to take away Big Boss. I boxed up everything and told them to administer a flea repellent in a month, clip his nails if he’d be a house cat, and finish up his vaccinations. *“Are you sure you want to give him up?”* they asked, the answer to which was uncertain, but I nodded and walked them out the door.
 
@@ -40,7 +40,7 @@ They got in a car. Big Boss kept meowing. I acted as a tough guy but cried like 
 .
 .
 
-Two years later, I am reading my diary at Starbucks. It dubiously qualify as a diary because each entry reads like “yoga’ed this morning,” or “dad visited today,” so a more accurate description would be a *lazy one-liner daily record*. Still, somehow the great human brains can miraculouly take those inputs, trigger a chain reaction of memories, and form a full-blown story. Unfathomable.
+Two years later, I am reading my diary at Starbucks. It dubiously qualifies as a diary because each entry reads like “yoga’ed this morning,” or “dad visited today,” so a more accurate description would be a *lazy one-liner daily record*. Still, somehow the great human brains can miraculouly take those inputs, trigger a chain reaction of memories, and form a full-blown story. Unfathomable.
 
 Reading on, I got curious what the very first entry was. Why did I even start this mundane task? There must have been an incredible event that motivated me to record my life. After flipping through hundreds of pages, I finally reached the beginning.
 
