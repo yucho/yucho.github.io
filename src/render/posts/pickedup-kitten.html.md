@@ -1,6 +1,7 @@
 ---
 layout: 'content'
 title: 'Picked Up a Kitten'
+description: 'My legacy of failure.'
 date: '7/23/2016'
 ---
 

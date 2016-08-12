@@ -1,6 +1,7 @@
 ---
 layout: 'content'
 title: 'Golf Rocks'
+description: 'The greatest sport there is.'
 date: '7/25/2016'
 ---
 
@@ -20,7 +21,7 @@ Now, let's hear what others have to say about this magnificent sport.
 
 Actually, Eve, that's awesome. It means golf is an undiscriminating sport that accepts those who aren't good enough for other sports. On that note, PGA lifted the ban on coloured people from playing golf in 1961. Very generous, no? That's like much later than any other sports! Golfer demographic is very likeable, too. It consists exclusively of rich men who each have ten wives.
 
-> *"[Golf is] a boring game for boring people. Do you ever watch golf on television? It's like watching flies fuck"&mdash;[Greorge Carlin](https://www.youtube.com/watch?v=Z4w7H48tBS8)*
+> *"[Golf is] a boring game for boring people. Do you ever watch golf on television? It's like watching flies fuck"&mdash;[George Carlin](https://www.youtube.com/watch?v=Z4w7H48tBS8)*
 
 Even the legendary comic/opinion leader endorses it. Golf equals maggot-making. I am always fascinated by reproductive biology of insects.
 
