@@ -1,5 +1,14 @@
 # The DocPad Configuration File
 # It is simply a CoffeeScript Object which is parsed by CSON
+
+# =================================
+# Custom Attributes
+
+# Array of project repositories
+projects = [{projects: "projects", "is": "is", initialized: "initialized"}]
+
+# =================================
+# DocPad Configuration
 docpadConfig =
 
 	# =================================
@@ -96,6 +105,10 @@ docpadConfig =
 			# Merge the document keywords with the site keywords
 			@site.keywords.concat(@document.keywords or []).join(', ')
 
+		getGitHubProjects: ->
+			# Return global custom attribute
+			return projects
+
 
 	# =================================
 	# Collections
@@ -127,6 +140,7 @@ docpadConfig =
 			deployRemote: 'origin'
 			deployBranch: 'master'
 
+
 	# =================================
 	# Environments
 
@@ -151,6 +165,33 @@ docpadConfig =
 	# You can find a full listing of events on the DocPad Wiki
 
 	events:
+
+		# Generate Before
+		# Here projects are fetched from remote repos
+		generateBefore: (opts, next)->
+			# Prepare
+			docpad = @docpad
+
+			# Log
+			docpad.log('info', 'Fetching your latest projects for display within the website')
+
+			# Create our getrepos instance
+			getter = require('getrepos').create()
+
+			# Fetch repos
+			getter.fetchReposFromUsers ['yucho'], (err,repos=[]) ->
+				# Check
+				return next(err) if err
+
+				# Apply
+				projects = repos.sort((a,b) -> b.watchers - a.watchers)
+				docpad.log('info', "Fetched your latest projects for display within the website, all #{repos.length} of them")
+
+				# Complete
+				return next()
+
+			# Return
+			return true
 
 		# Server Extend
 		# Used to add our own custom routes to the server before the docpad routes are added
