@@ -8,3 +8,19 @@ h1, h2, h3, h4, h5, h6
 	& a:hover
 	/a.obscure-link:hover
 		color #0FA0CE
+
+// Intrinsic ratio makes svg fill entire width of a wrapper
+// http://alistapart.com/article/creating-intrinsic-ratios-for-video
+.svg-wrap
+	background-color red // easy error detect
+	height 0
+	padding-top 100% // perfect square
+	position relative
+	svg
+		background-color cyan // easy error detect
+		width 100%
+		height 100%
+		display block
+		position absolute
+		top 0
+		left 0

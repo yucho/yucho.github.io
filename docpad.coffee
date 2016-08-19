@@ -5,7 +5,12 @@
 # Custom Attributes
 
 # Array of project repositories
-projects = [{projects: "projects", "is": "is", initialized: "initialized"}]
+projects = []
+
+###
+# Object containing svg elements for inline use within docs
+svgs = {}
+###
 
 # =================================
 # DocPad Configuration
@@ -25,7 +30,7 @@ docpadConfig =
 			#
 			# GitHub Pages are yet to support custom domain HTTPS. Follow this thread for updates:
 			# https://github.com/isaacs/github/issues/156
-			url: "http://yuchoho.com"
+			url: 'http://yuchoho.com'
 
 			# Here are some old site urls that you would like to redirect from
 			oldUrls: [
@@ -34,10 +39,10 @@ docpadConfig =
 			]
 
 			# The default title of our website
-			title: "Astropolitan Project"
+			title: 'Astropolitan Project'
 
 			# The author(s) of our website
-			author: "Yucho Ho"
+			author: 'Yucho Ho'
 
 			# The website description (for SEO)
 			description: """
@@ -72,11 +77,12 @@ docpadConfig =
 				'/vendor/log.js'
 				'/vendor/modernizr.js'
 				'/vendor/site.js'
+				'/vendor/snap.svg-min.js'
 				'/scripts/script.js'
 			]
 
 
-		# -----------------------------
+		# =================================
 		# Helper Functions
 
 		# Get the prepared site/document title
@@ -85,7 +91,7 @@ docpadConfig =
 		getPreparedTitle: ->
 			# if we have a document title, then we should use that and suffix the site's title onto it
 			if @document.title
-				"#{@document.title} | #{@site.title}"
+				'#{@document.title} | #{@site.title}'
 			# if our document does not have it's own title, then we should just use the site's title
 			else
 				@site.title
@@ -107,8 +113,12 @@ docpadConfig =
 
 		getGitHubProjects: ->
 			# Return global custom attribute
-			return projects
+			projects
 
+		###
+		getSVG: (name) ->
+			svgs[name]
+		###
 
 	# =================================
 	# Collections
@@ -168,30 +178,94 @@ docpadConfig =
 
 		# Generate Before
 		# Here projects are fetched from remote repos
-		generateBefore: (opts, next)->
+		# Svg files are also loaded
+		generateBefore: (opts, next) ->
 			# Prepare
 			docpad = @docpad
+			TaskGroup = require('taskgroup').TaskGroup
 
-			# Log
-			docpad.log('info', 'Fetching your latest projects for display within the website')
+			# Prepare parallel (asynchronous) tasks
+			tasks = new TaskGroup({concurrency: 0})
 
-			# Create our getrepos instance
-			getter = require('getrepos').create()
+			# Asynchronous
+			tasks.addTask 'fetch GitHub projects', (next) ->
+				# Log
+				docpad.log('info', 'Fetching your latest projects for display within the website')
 
-			# Fetch repos
-			getter.fetchReposFromUsers ['yucho'], (err,repos=[]) ->
-				# Check
-				return next(err) if err
+				# Create our getrepos instance
+				getter = require('getrepos').create()
 
-				# Apply
-				projects = repos.sort((a,b) -> b.watchers - a.watchers)
-				docpad.log('info', "Fetched your latest projects for display within the website, all #{repos.length} of them")
+				# Fetch repos
+				getter.fetchReposFromUsers ['yucho'], (err,repos=[]) ->
+					# Check
+					return next(err) if err
+
+					# Apply
+					projects = repos.sort((a,b) -> b.watchers - a.watchers)
+					docpad.log('info', "Fetched your latest projects for display within the website, all #{repos.length} of them")
+
+					# Complete
+					return next()
+
+			# Asynchronous
+			tasks.addTask 'read svgs', (next) ->
+				# Log
+				docpad.log('info', 'Reading all svg files in /src/snapsvg')
+
+				# Prepare
+				fs = require('fs')
+
+				# Load svg files in snapsvg directory if exist
+				fs.readdir './src/snapsvg', (err, files) ->
+					# snapsvg directory doesn't exist
+					if err
+						docpad.log('info', "snapsvg directory doesn't exist, so it won't be read")
+						return next()
+
+					# Prepare
+					svgs = {}
+					tasks = new TaskGroup({concurrency: 0})
+					eachr = require('eachr')
+
+					# Gotta read 'em all asynchronously
+					eachr files, (file, key) ->
+						if file.endsWith('.svg')
+							tasks.addTask (completed) ->
+								svg = file.substring(0, file.length - 4)
+								fs.readFile './src/snapsvg/'+file, 'utf-8', (err, data) ->
+									svgs[svg] = data
+									return completed(err, data)
+
+					# Log result upon finish
+					tasks.done (err, result) ->
+						docpad.log('error', err) if err
+						docpad.log('info', "Read #{result.length} svg files in /src/snapsvg")
+
+						# Template helpers
+						opts.templateData.svgs = svgs
+						opts.templateData.getSVG = (svg) ->
+							# Set true to render docs that reference this helper
+							@referencesOthers?()
+							@svgs[svg]
+
+						# Complete
+						return next(err)
+
+					# Execute this task group
+					tasks.run()
+
+			# Exit event handler
+			tasks.done (err) ->
+				docpad.log('error', err) if err
 
 				# Complete
 				return next()
 
-			# Return
-			return true
+			# Execute the task group
+			tasks.run()
+
+			# Chain
+			@
 
 		# Server Extend
 		# Used to add our own custom routes to the server before the docpad routes are added
