@@ -7,10 +7,6 @@
 # Array of project repositories
 projects = []
 
-###
-# Object containing svg elements for inline use within docs
-svgs = {}
-###
 
 # =================================
 # DocPad Configuration
@@ -77,7 +73,6 @@ docpadConfig =
 				'/vendor/log.js'
 				'/vendor/modernizr.js'
 				'/vendor/site.js'
-				'/vendor/snap.svg-min.js'
 				'/scripts/script.js'
 			]
 
@@ -111,14 +106,11 @@ docpadConfig =
 			# Merge the document keywords with the site keywords
 			@site.keywords.concat(@document.keywords or []).join(', ')
 
+		# Get my github repos
 		getGitHubProjects: ->
 			# Return global custom attribute
 			projects
 
-		###
-		getSVG: (name) ->
-			svgs[name]
-		###
 
 	# =================================
 	# Collections
@@ -182,87 +174,24 @@ docpadConfig =
 		generateBefore: (opts, next) ->
 			# Prepare
 			docpad = @docpad
-			TaskGroup = require('taskgroup').TaskGroup
 
-			# Prepare parallel (asynchronous) tasks
-			tasks = new TaskGroup({concurrency: 0})
+			# Log
+			docpad.log('info', 'Fetching your latest projects for display within the website')
 
-			# Asynchronous
-			tasks.addTask 'fetch GitHub projects', (next) ->
-				# Log
-				docpad.log('info', 'Fetching your latest projects for display within the website')
+			# Create our getrepos instance
+			getter = require('getrepos').create()
 
-				# Create our getrepos instance
-				getter = require('getrepos').create()
+			# Fetch repos
+			getter.fetchReposFromUsers ['yucho'], (err,repos=[]) ->
+				# Check
+				return next(err) if err
 
-				# Fetch repos
-				getter.fetchReposFromUsers ['yucho'], (err,repos=[]) ->
-					# Check
-					return next(err) if err
-
-					# Apply
-					projects = repos.sort((a,b) -> b.watchers - a.watchers)
-					docpad.log('info', "Fetched your latest projects for display within the website, all #{repos.length} of them")
-
-					# Complete
-					return next()
-
-			# Asynchronous
-			tasks.addTask 'read svgs', (next) ->
-				# Log
-				docpad.log('info', 'Reading all svg files in /src/snapsvg')
-
-				# Prepare
-				fs = require('fs')
-
-				# Load svg files in snapsvg directory if exist
-				fs.readdir './src/snapsvg', (err, files) ->
-					# snapsvg directory doesn't exist
-					if err
-						docpad.log('info', "snapsvg directory doesn't exist, so it won't be read")
-						return next()
-
-					# Prepare
-					svgs = {}
-					tasks = new TaskGroup({concurrency: 0})
-					eachr = require('eachr')
-
-					# Gotta read 'em all asynchronously
-					eachr files, (file, key) ->
-						if file.endsWith('.svg')
-							tasks.addTask (completed) ->
-								svg = file.substring(0, file.length - 4)
-								fs.readFile './src/snapsvg/'+file, 'utf-8', (err, data) ->
-									svgs[svg] = data
-									return completed(err, data)
-
-					# Log result upon finish
-					tasks.done (err, result) ->
-						docpad.log('error', err) if err
-						docpad.log('info', "Read #{result.length} svg files in /src/snapsvg")
-
-						# Template helpers
-						opts.templateData.svgs = svgs
-						opts.templateData.getSVG = (svg) ->
-							# Set true to render docs that reference this helper
-							@referencesOthers?()
-							@svgs[svg]
-
-						# Complete
-						return next(err)
-
-					# Execute this task group
-					tasks.run()
-
-			# Exit event handler
-			tasks.done (err) ->
-				docpad.log('error', err) if err
+				# Apply
+				projects = repos.sort((a,b) -> b.watchers - a.watchers)
+				docpad.log('info', "Fetched your latest projects for display within the website, all #{repos.length} of them")
 
 				# Complete
 				return next()
-
-			# Execute the task group
-			tasks.run()
 
 			# Chain
 			@
