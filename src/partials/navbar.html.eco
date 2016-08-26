@@ -3,8 +3,8 @@
 		<ul class="navbar-list">
 			<li class="navbar-item"><a class="navbar-link" href="<%= @site.url %>">Home</a></li>
 			<li class="navbar-item"><a class="navbar-link" href="#about">About</a></li>
-			<li class="navbar-item"><a class="navbar-link" href="posts">Posts</a></li>
-			<li class="navbar-item"><a class="navbar-link" href="projects">Projects</a></li>
+			<li class="navbar-item"><a class="navbar-link" href="<%= @site.url %>/posts">Posts</a></li>
+			<li class="navbar-item"><a class="navbar-link" href="<%= @site.url %>/projects">Projects</a></li>
 		</ul>
 	</div>
 </nav>
