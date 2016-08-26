@@ -1,6 +1,11 @@
-/* http://getskeleton.com/css/custom.css */
+/*
+Obtained from http://getskeleton.com/css/custom.css
+Modify this to keep skeleton clean
+*/
 .container {
-  max-width: 800px; }
+  max-width: 960px; }
+.site-title {
+  margin-top: 2rem; }
 .header {
   margin-top: 6rem;
   text-align: center; }

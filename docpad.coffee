@@ -58,7 +58,7 @@ docpadConfig =
 				'/vendor/normalize.css'
 				'/vendor/h5bp.css'
 				'/vendor/skeleton.css'
-				'/vendor/custom.css'
+				'/vendor/skeleton-custom.css'
 				'/styles/style.css'
 			]
 
@@ -72,7 +72,7 @@ docpadConfig =
 
 				'/vendor/log.js'
 				'/vendor/modernizr.js'
-				'/vendor/site.js'
+				#'/vendor/site.js'
 				'/scripts/script.js'
 			]
 
@@ -86,7 +86,7 @@ docpadConfig =
 		getPreparedTitle: ->
 			# if we have a document title, then we should use that and suffix the site's title onto it
 			if @document.title
-				'#{@document.title} | #{@site.title}'
+				"#{@document.title} | #{@site.title}"
 			# if our document does not have it's own title, then we should just use the site's title
 			else
 				@site.title

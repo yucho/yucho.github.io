@@ -1,7 +1,11 @@
 ---
 layout: 'default'
 title: 'Front'
+url: '/'
+urls: ['/index.html','/front/index.html','/front.html']
 ---
+
+<%- @partial('navbar') %>
 
 <table class="u-full-width">
 	<thead>
@@ -19,3 +23,19 @@ title: 'Front'
 		<% end %>
 	</tbody>
 </table>
+
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras volutpat ante pretium tortor rutrum cursus. Quisque congue turpis vitae arcu laoreet elementum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse tincidunt, enim vel aliquet pretium, odio purus condimentum dolor, eu tristique libero ex vel nulla. Donec id arcu tortor. Nam neque eros, scelerisque quis maximus in, molestie in massa. Nunc eget sollicitudin odio, a porta diam. Ut tempus ullamcorper ex, scelerisque commodo mauris pretium ac. Maecenas justo nulla, consectetur sit amet magna eu, ultrices vulputate ante.
+</p>
+<p>
+Nam rutrum, tortor et molestie iaculis, mauris ante laoreet turpis, et pellentesque tellus ipsum mattis velit. Etiam semper lobortis efficitur. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum vitae placerat urna. Vivamus mollis feugiat libero, tincidunt pretium nulla dapibus at. Quisque urna massa, scelerisque sed hendrerit et, dictum sit amet elit. Vivamus at ligula sed sem suscipit vulputate. Aenean nec elit in eros faucibus hendrerit at a erat. Nam id blandit est. Mauris mauris eros, ullamcorper quis sodales ut, porta id est. Phasellus nulla urna, molestie et odio eget, pulvinar luctus est. Integer quis est nibh. Nam venenatis, nunc quis luctus convallis, elit turpis volutpat nunc, ut rutrum neque lacus at risus.
+</p>
+<p>
+Duis volutpat erat at luctus commodo. Vestibulum commodo auctor lorem a iaculis. Nunc cursus augue ac ante tincidunt aliquet. Vestibulum id condimentum magna, ac luctus nibh. Suspendisse malesuada tristique mi, eu pulvinar turpis molestie sed. Ut sed hendrerit lectus. Quisque molestie varius ante, et hendrerit justo porttitor tempus. Mauris eros lorem, pulvinar quis urna a, dapibus lobortis sapien. Etiam id augue suscipit, aliquam neque in, pharetra dui. Proin dapibus porta erat, nec interdum lectus pretium id.
+</p>
+<p>
+In consectetur purus nec turpis varius luctus. Integer varius ultrices venenatis. In hac habitasse platea dictumst. Donec non leo at lacus elementum rhoncus. Integer eu placerat ipsum, ac efficitur nisl. Maecenas lacinia posuere lorem, non fermentum erat elementum vitae. Pellentesque aliquam, felis ac scelerisque cursus, mi sapien efficitur nisl, a pharetra tellus ligula nec ligula. Aliquam suscipit et nulla placerat varius. Maecenas lobortis rhoncus arcu in mollis. Aenean dignissim semper sollicitudin. Suspendisse est diam, auctor nec arcu vitae, volutpat vestibulum urna. Ut quis ornare est. Ut in elit ante.
+</p>
+<p>
+Donec dapibus justo at vulputate sollicitudin. Duis cursus nulla non leo tempor, vel euismod arcu tristique. Vestibulum ornare sapien vulputate arcu auctor porttitor. Donec id dolor eleifend, lobortis justo nec, vehicula metus. Etiam magna enim, mattis id odio eget, rutrum ullamcorper ex. Morbi in velit id magna elementum lobortis at vel neque. Nunc porta leo ex, non volutpat purus elementum at. Nam at tortor odio. Donec consectetur convallis rutrum.
+</p>

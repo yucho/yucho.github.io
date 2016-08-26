@@ -6,6 +6,9 @@ url: '/projects'
 urls: ['/projects/','/projects/index.html','/projects.html']
 ---
 
+# Navbar
+text @partial 'navbar'
+
 # Project List
 nav '.project-list', 'typeof':'dc:collection', ->
 	text @partial('project', {
