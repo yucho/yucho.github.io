@@ -54,6 +54,8 @@ docpadConfig =
 			styles: [
 				"""<!-- Fonts -->"""
 				'//fonts.googleapis.com/css?family=Raleway:400,300,600'
+				"""<!-- Icons -->"""
+				'https://fonts.googleapis.com/icon?family=Material+Icons'
 				"""<!-- CSS -->"""
 				'/vendor/normalize.css'
 				'/vendor/h5bp.css'
@@ -72,7 +74,7 @@ docpadConfig =
 
 				'/vendor/log.js'
 				'/vendor/modernizr.js'
-				#'/vendor/site.js'
+				#'/vendor/site.js' # Uncomment to dock the navbar on top
 				'/scripts/script.js'
 			]
 
@@ -126,8 +128,9 @@ docpadConfig =
 
 		# Create a collection called posts
 		# That contains all the documents that will be going to the out path posts
+		# except index.html
 		posts: ->
-			@getCollection('documents').findAllLive({relativeOutDirPath: 'posts'})
+			@getCollection('documents').findAllLive({relativeOutDirPath: 'posts', outFilename: {$ne: 'index.html'}})
 
 
 	# =================================

@@ -9,3 +9,23 @@ getSVGResponsiveAttributes = () ->
 		'xml:space': 'preserve'
 	}
 */
+
+$(document).ready(function() {
+
+	var $window = $(window);
+
+	function init() {
+		removeTitleLink();
+		$window.on('resize', removeTitleLink);
+	}
+
+	// If width < 750px, remove title link (and make it dropdown menu in CSS)
+	function removeTitleLink() {
+		if($window.width() < 750)
+			$('.site-title > a').click(function(){ return false; });
+		else
+			$('.site-title > a').unbind('click');
+	}
+
+	init();
+});

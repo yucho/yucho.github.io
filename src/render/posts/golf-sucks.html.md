@@ -5,9 +5,11 @@ description: 'The greatest sport there is.'
 date: '7/25/2016'
 ---
 
+![golf ball on grass](../images/golfball-on-grass.png "golf ball on grass")
+
 If you've ever been to a driving range and smashed golf balls, you would understand the indescribable feeling to watch a white dot vanish into oblivion. Though the ball is past one hundred miles, it feels very still, as *Major Tom* puts it. It's more satisfying than Jasmine on a magic carpet ride.
 
-The other day, my coworkers were chatting about golf. They were having a good time in the office. The folloing summarizes their entire conversation: "Have you been to *so-and-so* course?" "Did you know *so-and-so* plays well?" "Tell me about it." rinse and repeat. Eventually, one of the coworkers turned to me and asked: *"you play golf?"*
+The other day, my coworkers were chatting about golf. They were having a good time in the office. The following summarizes their entire conversation: "Have you been to *so-and-so* course?" "Did you know *so-and-so* plays well?" "Tell me about it." Rinse and repeat. Eventually, one of the coworkers turned to me and asked: *"you play golf?"*
 
 I was not sure. But I can share my view on this awe-inspiring sport.
 

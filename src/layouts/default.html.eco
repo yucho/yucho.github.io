@@ -26,14 +26,15 @@
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 </head>
-<body<%- ' class=front' if @document.title is 'Front' %>>
+<body>
 	<!--[if lt IE 7]>
 	<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
 
 	<div class="container">
-		<header>
+		<header class="site-header">
 			<h2 class="site-title"><a href="<%= @site.url %>"><%- @site.title %></a></h2>
+			<%- @partial('navbar') %>
 		</header>
 		<article>
 			<%- @content %>

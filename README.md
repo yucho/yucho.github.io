@@ -22,11 +22,7 @@ A very omnivorous website that talks just about anything. It also happens to be 
 
 ## Task List
 
-- [x] partial
-- [x] projects page
-- [x] svg
-- [x] navbar
-- [ ] mobile navbar
+- [x] mobile navbar
 - [ ] about page
 - [ ] masonry
 - [ ] docpad-plugin-combiner

@@ -1,4 +1,5 @@
 <nav class="navbar">
+	<span class="navbar-collapse"><i class="material-icons navbar-icon">view_headline</i></span>
 	<div class="container">
 		<ul class="navbar-list">
 			<li class="navbar-item"><a class="navbar-link" href="<%= @site.url %>">Home</a></li>

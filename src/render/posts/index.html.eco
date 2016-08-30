@@ -1,20 +1,12 @@
 ---
 layout: 'default'
 title: 'Posts'
-description: 'Lots of words.'
+description: 'Accessible posts.'
 url: '/posts'
 urls: ['/posts/','/posts/index.html','/posts.html']
 ---
 
-<%- @partial('navbar') %>
-
 <table class="u-full-width">
-	<thead>
-		<tr>
-			<th>Date</th>
-			<th>Title</th>
-		</tr>
-	</thead>
 	<tbody>
 		<% for post in @getCollection('posts').sortArray(date: -1): %>
 		<tr>

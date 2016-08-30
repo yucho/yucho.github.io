@@ -24,3 +24,99 @@ h1, h2, h3, h4, h5, h6
 		position absolute
 		top 0
 		left 0
+
+// Make sure images don't run outside containers
+img
+	max-width: 100%
+	box-sizing: border-box
+
+// Force scollbar on every page to prevent layout "jump"
+html
+	overflow-y: scroll
+
+// Modify navbar even further by overriding skeleton-custom.css
+// When screen is small, collapse the navbar, i.e. apply popover to navbar itself
+@media (max-width: 749px)
+	.site-title
+		display: inline-block
+		margin-right: 0.1rem
+	.site-header
+		position: relative
+	.site-header:hover > .navbar > .container
+		display: block
+	.navbar
+		display: inline-block
+		& > .container
+			display: none
+			position: absolute
+			top: 0
+			left: 0
+			background: #fff
+			border: 1px solid #eee
+			border-radius: 4px
+			top: 98%
+			left: 25%
+			max-width: 50%
+			z-index: 99
+			-webkit-filter: drop-shadow(0 0 6px rgba(0,0,0,.1))
+			   -moz-filter: drop-shadow(0 0 6px rgba(0,0,0,.1))
+			        filter: drop-shadow(0 0 6px rgba(0,0,0,.1))
+	.navbar-item:first-child .navbar-link:after, 
+	.navbar-item:first-child .navbar-link:before
+		bottom: 100%
+		left: 50%
+		border: solid transparent
+		content: " "
+		height: 0
+		width: 0
+		position: absolute
+		pointer-events: none
+	.navbar-item:first-child .navbar-link:after
+		border-color: rgba(255, 255, 255, 0)
+		border-bottom-color: #fff
+		border-width: 10px
+		margin-left: -10px
+	.navbar-item:first-child .navbar-link:before
+		border-color: rgba(238, 238, 238, 0)
+		border-bottom-color: #eee
+		border-width: 11px
+		margin-left: -11px
+	.navbar-list
+		padding: 0
+		margin: 0
+		list-style: none
+	.navbar-item
+		padding: 0
+		margin: 0
+	.navbar-link
+		position: relative
+		color: #222
+		display: block
+		padding: 8px 20px
+		border-bottom: 1px solid #eee
+		text-decoration: none
+		text-transform: uppercase
+		font-size: 1.0rem
+		font-weight: 600
+		text-align: center
+		letter-spacing: .1rem
+	.navbar-item:first-child .navbar-link
+		border-radius: 4px 4px 0 0
+	.navbar-item:last-child .navbar-link
+		border-radius: 0 0 4px 4px
+		border-bottom-width: 0
+	.navbar-link:hover
+		color: #fff
+		background: #33C3F0
+	.navbar-link:hover,
+	.navbar-item:first-child .navbar-link:hover:after
+		border-bottom-color: #33C3F0
+
+@media (min-width: 750px)
+	.site-title
+		display: block
+		margin-right: 0
+	.navbar-collapse
+		display: none
+	.navbar > .container
+		display: block

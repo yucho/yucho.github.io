@@ -1,19 +1,12 @@
 ---
 layout: 'default'
 title: 'Front'
+description: 'A very omnivorous website that talks just about anything.'
 url: '/'
 urls: ['/index.html','/front/index.html','/front.html']
 ---
 
-<%- @partial('navbar') %>
-
 <table class="u-full-width">
-	<thead>
-		<tr>
-			<th>Date</th>
-			<th>Title</th>
-		</tr>
-	</thead>
 	<tbody>
 		<% for post in @getCollection('posts').sortArray(date: -1): %>
 		<tr>
