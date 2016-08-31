@@ -16,6 +16,7 @@ if project
 				a '.project-link', href:project.html_url, ->
 					strong '.project-name', property:'dc:name', ->
 						project.name
+					text '&nbsp;'
 					small '.project-stars', property:'dc:stars', ->
 						text "#{project.watchers} stars"
 			if project.description

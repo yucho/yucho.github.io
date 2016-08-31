@@ -1,6 +1,5 @@
 ---
 layout: 'default'
-title: 'Front'
 description: 'A very omnivorous website that talks just about anything.'
 url: '/'
 urls: ['/index.html','/front/index.html','/front.html']

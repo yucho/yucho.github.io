@@ -1,7 +1,7 @@
 ---
 layout: 'default'
 title: 'Projects'
-description: 'Showcase projects.'
+description: "Showcase of Yucho Ho's projects. It's not yet a thing, you say? That's exactly right."
 url: '/projects'
 urls: ['/projects/','/projects/index.html','/projects.html']
 ---

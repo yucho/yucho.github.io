@@ -22,15 +22,14 @@ A very omnivorous website that talks just about anything. It also happens to be 
 
 ## Task List
 
+- [x] SEO / sitemap
 - [ ] about page
-- [x] masonry
 - [ ] more images
 - [ ] docpad-plugin-combiner
 - [ ] lint
 - [ ] multilingual
 - [ ] more posts
 - [ ] clione
-- [x] style tweak
 - [ ] comments
 - [ ] SNS
 - [ ] credits page

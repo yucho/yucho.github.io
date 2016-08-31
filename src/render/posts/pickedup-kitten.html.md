@@ -1,7 +1,7 @@
 ---
-layout: 'content'
+layout: 'post'
 title: 'Picked Up a Kitten'
-description: 'My legacy of failure.'
+description: 'My legacy of failure as a pet owner. And then there was an abandoned cat.'
 date: '7/23/2016'
 ---
 

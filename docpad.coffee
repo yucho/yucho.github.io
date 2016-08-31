@@ -4,7 +4,7 @@
 # =================================
 # Custom Attributes
 
-# Array of project repositories
+# Initialize an array of github repositories
 projects = []
 
 
@@ -47,7 +47,7 @@ docpadConfig =
 
 			# The website keywords (for SEO) separated by commas
 			keywords: """
-				Yucho Ho, blog, engineer
+				Yucho Ho, Astropolitan, Astropolitan Project, blog, engineer, projects, GitHub
 				"""
 
 			# The website's styles
@@ -144,6 +144,13 @@ docpadConfig =
 		ghpages:
 			deployRemote: 'origin'
 			deployBranch: 'master'
+
+		# SEO
+		sitemap:
+			cachetime: 600000
+			changefreq: 'weekly'
+			priority: 0.5
+			filePath: 'sitemap.xml'
 
 
 	# =================================

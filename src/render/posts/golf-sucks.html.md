@@ -1,7 +1,7 @@
 ---
-layout: 'content'
+layout: 'post'
 title: 'Golf Rocks'
-description: 'The greatest sport there is.'
+description: 'The greatest sport there is, and a humble attempt to share this view.'
 date: '7/25/2016'
 ---
 
