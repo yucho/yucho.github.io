@@ -11,11 +11,11 @@ If you've ever been to a driving range and smashed golf balls, you would underst
 
 The other day, my coworkers were chatting about golf. They were having a good time in the office. The following summarizes their entire conversation: "Have you been to *so-and-so* course?" "Did you know *so-and-so* plays well?" "Tell me about it." Rinse and repeat. Eventually, one of the coworkers turned to me and asked: *"you play golf?"*
 
-I was not sure. But I can share my view on this awe-inspiring sport.
+I was not sure of the answer. But I can share my view on this awe-inspiring sport.
 
 First off, we get to own a slave during the game! Of course, we will be courteous and call it a caddie. But it basically carries luggages and drives a car for us. It rakes bumpy soil and wipes dirt off balls. That's neat.
 
-An average golf course is 150 acre big. And golfers get to privatize everything within the land. You think moms pushing strollers can enjoy the beautiful landscape? Screw that. In order to build a golf course, the owner must invest millions of dollars to vandalize local ecosystem. He must wipe out native vegetation, drive away annoying wild animals, and infuse the soil with good stuff so only the lawn can survive. Even after all those troubles, he spends half million dollar annually to maintain them. Do you understand the prestige now, moms? You wanna walk, you gonna pay.
+An average golf course is 150 acre big. And golfers get to privatize everything within the land. You think moms pushing strollers can enjoy the beautiful landscape? Screw that. In order to build a golf course, the owner must invest millions of dollars to vandalize local ecosystem. He must wipe out native vegetation, drive away annoying wild animals, and infuse the soil with good stuff so only the selective grass can survive. Even after all those troubles, the owner spends half million dollar annually to maintain everything. Do you understand the prestige now, mums? You wanna walk, you gonna pay.
 
 Now, let's hear what others have to say about this magnificent sport.
 
@@ -27,11 +27,11 @@ Actually, Eve, that's awesome. It means golf is an undiscriminating sport that a
 
 Even the legendary comic/opinion leader endorses it. Golf equals maggot-making. I am always fascinated by reproductive biology of insects.
 
-Another reason to love this game is that there comes a serendipitous moment every time you play. Here's just one example. I was practicing my swing at a driving range one day. It was nice and sunny. Ducks were flocking on an artificial lake. Squirrels were running afar on the field. The guys next to my station were talking.
+Another reason to love this game is that there comes a serendipitous moment every time you play. Here's just one example. I was practicing my swing at a driving range one day. It was nice and sunny. Ducks were flocking upon artificial lakes. Squirrels were running afar on the field. The guys next to my tee started talking.
 
 "Hey man, check this out. I'm gonna hit those squirrels with my balls."<br>
 "Word. That's a good practice of aim."
 
-What a brilliant idea. I almost wanted to turn to them and join the conversation. But since I'm a shy pussy who has a heart smaller than that of a chicken, I couldn't do it. These men just enlightened me that we possess the power to decide whether those tiny brains stay in skulls or splatter on the ground. Us big men dominate. Yeah.
+What a brilliant idea. I almost wanted to turn to them and join the conversation. But since I'm a sissy who has a heart smaller than that of a chicken, I couldn't do it. These men just enlightened me that we possess the power to decide whether those tiny mammalian brains stay in skulls or splatter on the ground. [Me big man](https://www.youtube.com/watch?v=h-T6f9vCeaE) dominate. Yeah.
 
-Here's what I would have told them if I had the courage: "Dude, you're genius. Hold on, I got a better plan. Let's target your fucking forehead instead!"
+Had I joined them, I wanted to say: "Dude, you're genius. Hold on, I got a better plan. Let's target your fucking forehead instead!"

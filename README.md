@@ -22,18 +22,19 @@ A very omnivorous website that talks just about anything. It also happens to be 
 
 ## Task List
 
-- [x] mobile navbar
 - [ ] about page
-- [ ] masonry
+- [x] masonry
+- [ ] more images
 - [ ] docpad-plugin-combiner
 - [ ] lint
 - [ ] multilingual
 - [ ] more posts
-- [ ] style tweak
+- [ ] clione
+- [x] style tweak
 - [ ] comments
 - [ ] SNS
 - [ ] credits page
-- [ ] blog page
+- [ ] posts filters
 
 
 ## License

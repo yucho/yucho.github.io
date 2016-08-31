@@ -4,15 +4,29 @@ title: 'Front'
 description: 'A very omnivorous website that talks just about anything.'
 url: '/'
 urls: ['/index.html','/front/index.html','/front.html']
+styles: ['/vendor/masonry/component.css']
+scripts:
+	- '/vendor/masonry/masonry.pkgd.min.js'
+	- '/vendor/masonry/imagesloaded.js'
+	- '/vendor/masonry/classie.js'
+	- '/vendor/masonry/AnimOnScroll.js'
+	- |
+		<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			new AnimOnScroll(document.getElementById('grid'), {
+				minDuration : 0.4,
+				maxDuration : 0.7,
+				viewportFactor : 0.2
+			});
+		});
+		</script>
 ---
 
-<table class="u-full-width">
-	<tbody>
-		<% for post in @getCollection('posts').sortArray(date: -1): %>
-		<tr>
-			<td><time><%- post.date.toLocaleDateString() %></time></td>
-			<td><a href="<%= post.url %>"><%- post.title or post.name %></a></td>
-		</tr>
-		<% end %>
-	</tbody>
-</table>
+<ul class="grid effect-2" id="grid">
+	<% for post in @getCollection('posts').sortArray(date: -1): %>
+	<li>
+		<time><%- post.date.toLocaleDateString() %></time>
+		<h4><a class="obscure-link" href="<%= post.url %>"><%- post.title or post.name %></a></h4>
+	</li>
+	<% end %>
+</ul>
