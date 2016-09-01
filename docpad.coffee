@@ -19,6 +19,9 @@ docpadConfig =
 
 	templateData:
 
+		# Path to store brick images
+		brickPath: '/images/bricks'
+
 		# Specify some site properties
 		site:
 			# The production url of our website
@@ -112,6 +115,21 @@ docpadConfig =
 		getGitHubProjects: ->
 			# Return global custom attribute
 			projects
+
+		# Get brick image for masonry
+		###
+		getBrickImage: (filename) ->
+			# Only accept string
+			return null if filename isnt 'string'
+
+			# Now get brick image by name
+			if filename.endsWith('.html')
+				name = filename.substring(0, filename.length-4)
+			else
+				name = filename
+
+			@site.brickPath+'/'+name
+		###
 
 
 	# =================================

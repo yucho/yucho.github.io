@@ -24,8 +24,15 @@ scripts:
 <ul class="grid effect-2" id="grid">
 	<% for post in @getCollection('posts').sortArray(date: -1): %>
 	<li>
-		<time><%- post.date.toLocaleDateString() %></time>
-		<h4><a class="obscure-link" href="<%= post.url %>"><%- post.title or post.name %></a></h4>
+		<a class="obscure-link" href="<%= post.url %>">
+			<div class="text-over-image-wrapper">
+				<div class="text-over-image">
+					<time><%- post.date.toLocaleDateString() %></time>
+					<h4><%- post.title or post.name %></h4>
+				</div>
+				<%- @partial('brick-image', post) %>
+			</div>
+		</a>
 	</li>
 	<% end %>
 </ul>

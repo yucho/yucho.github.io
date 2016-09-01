@@ -22,7 +22,8 @@ A very omnivorous website that talks just about anything. It also happens to be 
 
 ## Task List
 
-- [x] SEO / sitemap
+- [x] brick images
+- [x] Google verification file
 - [ ] about page
 - [ ] more images
 - [ ] docpad-plugin-combiner

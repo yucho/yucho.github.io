@@ -16,7 +16,9 @@ $(document).ready(function() {
 
 	function init() {
 		removeTitleLink();
+		setMinHeight();
 		$window.on('resize', removeTitleLink);
+		$window.on('resize', setMinHeight);
 	}
 
 	// If width < 750px, remove title link (and make it dropdown menu in CSS)
@@ -25,6 +27,17 @@ $(document).ready(function() {
 			$('.site-title > a').click(function(){ return false; });
 		else
 			$('.site-title > a').unbind('click');
+	}
+
+	// Text over image, set min-height of the wrapper
+	function setMinHeight() {
+		heights = [];
+		$.each($('.text-over-image'), function () {
+			heights.push( $(this).outerHeight(true) );
+		});
+		$.each($('.text-over-image-wrapper'), function (index) {
+			$(this).css('min-height', heights[index]);
+		});
 	}
 
 	init();
