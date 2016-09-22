@@ -1,6 +1,8 @@
 ---
 layout: 'default'
-description: 'A very omnivorous website that talks just about anything.'
+description: "A very omnivorous website that talks just about anything. It also happens to be Yucho Ho's personal site."
+changefreq: 'daily'
+priority: 1
 url: '/'
 urls: ['/index.html','/front/index.html','/front.html']
 styles: ['/vendor/masonry/component.css']

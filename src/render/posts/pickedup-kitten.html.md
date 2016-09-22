@@ -2,12 +2,13 @@
 layout: 'post'
 title: 'Picked Up a Kitten'
 description: 'My legacy of failure as a pet owner. And then there was an abandoned cat.'
+keywords: 'cat, kitten, stray, animal, pet, story'
 date: '7/23/2016'
 ---
 
 A pet's worst nightmare is the owner.
 
-Well, some owners do well. I sure as hell don't. But I ain't no evil who want to cast misery upon poor animals. I just suck at raising living things. Let me share with you a story.
+OK fine, some owners perform well. I sure as hell don't. But I ain't no evil who want to cast misery upon poor animals. I just suck at raising living things. Let me share with you a story.
 
 A notorious sister of mine loves to buy pets and totally not clean up after them, therefore making us family members work. So, we ended up rearing a ferret, cats and dogs, various birds, lots of hamsters, and a spectrum of aquatics. Most of them either fated to premature death or runaway. I might add that absolutely no animal cruelty existed; only did idiocy.
 

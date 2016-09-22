@@ -50,7 +50,7 @@ docpadConfig =
 
 			# The website keywords (for SEO) separated by commas
 			keywords: """
-				Yucho Ho, Astropolitan, Astropolitan Project, blog, engineer, projects, GitHub
+				Yucho Ho, Astropolitan, Astropolitan Project, blog, engineer, projects, game, game development, GitHub
 				"""
 
 			# The website's styles

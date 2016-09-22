@@ -43,7 +43,14 @@ html
 	position: absolute
 	top: 0
 	left: 0
+	padding: 1rem 0 0 1rem
 	z-index: 40
+	// White outer edge
+	text-shadow: 0 0 0.2rem #fff,
+	0 0 0.2rem #fff,
+	0 0 0.2rem #fff,
+	0 0 0.2rem #fff,
+	0 0 0.2rem #fff
 .text-over-image-wrapper
 	position: relative
 	img
@@ -59,6 +66,11 @@ html
 		position: relative
 	.site-header:hover > .navbar > .container
 		display: block
+	.site-header:hover
+		color: #0FA0CE
+		& > .site-title
+			& a, a:hover
+				color: #0FA0CE
 	.navbar
 		display: inline-block
 		& > .container

@@ -1,7 +1,9 @@
 ---
 layout: 'default'
 title: 'Posts'
-description: 'Accessible posts.'
+description: 'Quick thoughts on cat, girls, universe, and Colorado.'
+changefreq: 'daily'
+priority: 0.9
 url: '/posts'
 urls: ['/posts/','/posts/index.html','/posts.html']
 ---

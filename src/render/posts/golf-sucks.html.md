@@ -2,8 +2,8 @@
 layout: 'post'
 title: 'Golf Rocks'
 description: 'The greatest sport there is, and a humble attempt to share this view.'
+keywords: 'golf, golf rocks, golf sucks, driving range'
 date: '7/25/2016'
-brickBasename: 'golf-sucks'
 brickDimensions: ['450x450', '900x900', '1350x1350']
 brickType: 'png'
 ---
