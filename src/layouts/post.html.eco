@@ -3,6 +3,7 @@ layout: default
 ---
 
 <time><%- @document.date.toLocaleDateString() %></time>
+<h5 class="author">by <%- @document.author or @site.author or "-" %></h5>
 <h4><a href="<%= @document.url %>"><%- @document.title or @document.name %></a></h4>
 <div>
 	<%- @content %>

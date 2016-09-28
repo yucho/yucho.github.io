@@ -10,7 +10,7 @@ date: '9/20/2016'
 
 Fiction authors love the concept of alter ego. We all kind of think it is cool and mysterious because it hides behind a regular personality. But it just might not deserve all that credit. Contrary to popular belief, alter egos appear quite commonly in everyday settings.
 
-For a start, road ragers. These peeps are decent outside vehicles. But hopping inside a moving electric box somehow makes them hate life out of nowhere.
+For a start, road ragers. These peeps are decent outside vehicles. But hopping into a moving electric box somehow makes them hate life out of nowhere.
 
 Multilingual speakers feel a paradigm shift when they switch their spoken language. The reason is because we think in words, so by drastically changing available vocabularies, a person essentialy becomes someone else.
 
@@ -22,7 +22,7 @@ Paul & Eddie's is about 7 minutes walk from my high school. It is a bar with a b
 
 Anyway, my friend James and I were having a blast. The bar charges a dollar per a game of eight-ball and losers pay for the game. We challenged regulars who were there, a duo of a laid-back white bloke and a huge Latino man. For the sake of storytelling, let me codename them *White* and *Brown* respectively, inspired by their skin colors.
 
-Brown saw me and shouted "Okajima!" numerous times like an idiot, which confused me very much. I shouted back "Jose!" every time he did so, and he would burst into laugher. Intelligence level was quick to plunge, which was, of course, to be expected in a place to serve alcohol.
+Brown saw me and shouted "Okajima!" numerous times like an idiot, which confused me very much. I shouted back "Jose!" every time he did so, and he would burst into laughter. Intelligence level was quick to plunge, which was, of course, to be expected in a place to serve alcohol.
 
 James and I won six games on a streak.
 
@@ -46,7 +46,7 @@ At this point the intelligence level had truly hit rock bottom. I was too hammer
 
 ...There couldn't have been a more obvious hustle. But being the knucklehead I am, I didn't see it. I mean, we won all 6 games. We are better players than them, right? Fortunately, James and I had no balls to bet Benjamin for a game, so we didn't accept the challenge. In fact, we were ready to sober up with some Chinese food afterwards. So we headed to the door.
 
-Brown suddenly snapped at that moment. "Ey, I don't like your *hugging* shit, man!" He grabbed my shirt and hurled me into the floor.
+Brown suddenly snapped at that moment. "Ey, I don't like your *hugging* shit, man!" He grabbed me by the collar and hurled me into the floor.
 
 I flinched backward, totally not comprehending at all what was happening. The crowd was quick to react to the scene. A few men came to stop Brown from potential misdemeanor.
 
