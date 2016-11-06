@@ -4,27 +4,9 @@ title: 'Picked Up a Kitten'
 description: 'My legacy of failure as a pet owner. And then there was an abandoned cat.'
 keywords: 'cat, kitten, stray, animal, pet, story'
 date: '7/23/2016'
-brickDimensions: ['320x320', '640x640', '960x720']
-brickType: 'png'
-styles: ['/vendor/masonry/component.css']
-scripts:
-	- '/vendor/masonry/masonry.pkgd.min.js'
-	- '/vendor/masonry/imagesloaded.js'
-	- '/vendor/masonry/classie.js'
-	- '/vendor/masonry/AnimOnScroll.js'
-	- |
-		<script>
-		document.addEventListener("DOMContentLoaded", function() {
-			new AnimOnScroll(document.getElementById('grid'), {
-				minDuration : 0.4,
-				maxDuration : 0.7,
-				viewportFactor : 0.2
-			});
-		});
-		</script>
+brickDimensions: ['450x450', '900x900', '1350x1350']
+brickType: 'jpg'
 ---
-
-<img src="../images/cats-on-girl_1920x720.png" sizes="100vw" srcset="../images/cats-on-girl_960x360.png 960w, ../images/cats-on-girl_1440x540.png 1440w, ../images/cats-on-girl_1920x720.png 1920w" alt="cats on a girl">
 
 A pet's worst nightmare is the owner.
 
@@ -69,13 +51,16 @@ Reading on, I got curious what the very first entry was. Why did I even start th
 It reads: “5/26/2015, I picked up a cat.”
 
 <br>
+<br>
+<hr>
+<h6 style="text-align:center">The legacy of lovely Big Boss.</h6>
 
-<ul class="grid effect-1" id="grid">
-	<li><a class="obscure-link" href="../images/bigboss01.jpg">
+<ul class="row" style="list-style: none">
+	<li class="four columns"><a href="../images/bigboss01.jpg">
 		<img src="../images/bigboss01.jpg"></a></li>
-	<li><a class="obscure-link" href="../images/bigboss02.jpg">
+	<li class="four columns"><a href="../images/bigboss02.jpg">
 		<img src="../images/bigboss02.jpg"></a></li>
-	<li><a class="obscure-link" href="../images/bigboss03.jpg">
+	<li class="four columns"><a href="../images/bigboss03.jpg">
 		<img src="../images/bigboss03.jpg"></a></li>
 </ul>
-<h6 style="text-align:center">The legacy of lovely Big Boss.</h6>
+
