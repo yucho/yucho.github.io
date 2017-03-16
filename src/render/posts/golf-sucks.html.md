@@ -8,7 +8,7 @@ brickDimensions: ['450x450', '900x900', '1350x1350']
 brickType: 'png'
 ---
 
-<img src="../images/golfball-on-grass_1680x810.png" sizes="(min-width: 840px) 840px, 100vw" srcset="../images/golfball-on-grass_1080x521.png 1080w, ../images/golfball-on-grass_1680x810.png 1680w" alt="golf ball on grass">
+<img src="../images/golfball-on-grass_1680x810.png" sizes="(min-width: 840px) 840px, 100vw" srcset="../images/golfball-on-grass_1080x521.png 1080w, ../images/golfball-on-grass_1680x810.png 1680w">
 
 If you've ever been to a driving range and smashed golf balls, you would understand the indescribable feeling to watch a white dot vanish into oblivion. Though the ball is past one hundred miles, it feels very still, as *[Major Tom](https://www.youtube.com/watch?v=iYYRH4apXDo "Space Oddity")* puts it. It's more satisfying than Jasmine on a magic carpet ride.
 
