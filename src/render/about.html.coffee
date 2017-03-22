@@ -4,36 +4,101 @@ title: 'About'
 description: "A brief overview of what this website is about. Unfortunately, it is not about money, violence, and sex."
 url: '/about'
 urls: ['/about/','/about/index.html','/about.html']
-styles: ['/styles/about.css']
+styles:
+	- |
+		<style>
+		@media (max-width: 549px) {
+			/* Crop image */
+			.profile-pic {
+				width: 100vw;
+				height: 100vw;
+				border-radius: 30%;
+				object-fit: none;
+				object-position: 50% 90%;
+			}
+		}
+		@media (min-width: 550px) {
+			.row {
+				position: relative;
+				overflow: hidden;
+			}
+			.left-div {
+				position: absolute;
+				width: 48%;
+				left: 0;
+				bottom: 0;
+			}
+			.sky-block {
+				width: 100%;
+				padding-top: 500%;
+			}
+
+			/* Responsive empty div keeping aspect ratio */
+			.left-empty-div-wrapper {
+				display: inline-block;
+				position: relative;
+			}
+			.left-empty-div-wrapper:after {
+				padding-top: 120%;
+				display: block;
+				content: '';
+			}
+			.left-empty-div {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				left: 0;
+			}
+		}
+		/*
+			Todo: icons magic center float
+		*/
+		.sky-gradient {
+			background: #3766aa; /* For browsers that do not support gradients */
+			background: -webkit-linear-gradient(black, #3766aa); /* For Safari 5.1 to 6.0 */
+			background: -o-linear-gradient(black, #3766aa); /* For Opera 11.1 to 12.0 */
+			background: -moz-linear-gradient(black, #3766aa); /* For Firefox 3.6 to 15 */
+			background: linear-gradient(black, #3766aa); /* Standard syntax */
+		}
+		</style>
 ---
 
-# Light bulb
-img src: "../images/lightbulb_1440x1920.png",
-	sizes: "(min-width: 240px) 240px, 100vw",
-	srcset: "../images/lightbulb_480x640.png 480w, ../images/lightbulb_960x1280.png 960w, ../images/lightbulb_1440x1920.png 1440w",
-	alt: "light bulb"
+div '.row', ->
+	# Profile pic
 
-# Description
-h4 -> "Welcome to the pit."
-p  ->
-	"""
-	As you wondered the vast <em>Internet Wasteland</em>, you have fallen into this pit. Judging from your dexterity and proficiency at climbing, it is impossible to exit straight out. Therefore, you have decided to search around this site for more information.
-	"""
-p ->
-	"""
-	A quick investigation revealed that a suspect named <strong>Yucho Ho</strong> is responsible for this abomination. He seems to be a hobbyist programmer, pianist, pilot, entrepreneur, climber, boxer, and fish monger. You also discovered a message left by a fallen traveler who had been trapped in here before.
-	"""
-blockquote ->
-	em ->
-		p ->
+	# Empty div for layout
+	div '.six.columns.left-empty-div-wrapper', ->
+		div '.left-empty-div', ->
+
+	# Absolute-positioned div sticking to bottom
+	div '.left-div', ->
+		div '.sky-block.sky-gradient', ->
+		img '.profile-pic',
+			src: "../images/yucho-bantay.jpg",
+			sizes: "100vw",
+			srcset: "../images/yucho-bantay.jpg 2988w",
+			alt: "Yucho leaning on Bantay Bell Tower"
+
+	# Description
+	div '.six.columns', ->
+		h4 -> "I welcome you."
+		p  ->
 			"""
-			My time has come. It is too late for me, and I am ready to meet my fate. However, I shall leave this message in attempt to save future victims. Beware of occasional profanity. In order to avoid the calamity, you must read the posts and leave comments...!
+			This website is called <i>Astropolitan Project</i>. I am its creator <b>Yucho Ho</b>. I use it to blog my thoughts.
+			"""
+		p  ->
+			"""
+			Yucho is a hobbyist: programmer, pianist, pilot, entrepreneur, climber, boxer, and fish monger.
+			"""
+		p  ->
+			"""
+			Yucho gets nerdy for: music theory, theoretical math, and software deployment. Otherwise, I do what a typical modern human does.
+			"""
+		p  ->
+			"""
+			Hey, thanks for your interest in this website. I can't offer you a cup of coffee through the screen, but do make yourself at home!
 			"""
 
 # h4 -> "Links to unmaintained services:"
-# Facebook, Twitter, etc. etc.
-
-# Profile pic here
-div style: "text-align: center; margin: 0px auto; width: 40%; background-color: red; overflow: visible;", ->
-	div ->
-		img src: "http://yuchoho.com/images/golfball-on-grass_1680x810.png", sizes: "(min-width: 640px) 960px, 150vw", srcset: "../images/about-yucho_1440x640.png 1440w, ../images/about-yucho_2880x1280.png 2880w", alt: "Yucho smirks", style: "margin: 0 -9999% 0 -9999%; display: inline-block; max-width: none"
+# Facebook, Twitter, Github, etc.

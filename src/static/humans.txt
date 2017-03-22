@@ -3,11 +3,14 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Author: Yucho Ho
+    Twitter: @HoYucho
+    From: San Jose, California, USA
 
 # THANKS
 
-    <name>
+    DocPad Creator: Benjamin Lupton
+    Twitter: @balupton
 
 # TECHNOLOGY COLOPHON
 
