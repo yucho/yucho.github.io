@@ -170,17 +170,6 @@ docpadConfig =
 			priority: 0.5
 			filePath: 'sitemap.xml'
 
-		# Redirects
-		cleanurls:
-			advancedRedirects: [
-				[/^\/posts\/?$/, '/']
-				[/^\/posts\/index\.html\/?$/, '/']
-				[/^\/posts\.html\/?$/, '/']
-				[/^\/front\/?$/, '/']
-				[/^\/front\/index\.html\/?$/, '/']
-				[/^\/front\.html\/?$/, '/']
-			]
-
 
 	# =================================
 	# Environments

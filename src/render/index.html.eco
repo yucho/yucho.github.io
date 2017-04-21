@@ -4,7 +4,7 @@ description: "A very omnivorous website that talks just about anything. It also 
 changefreq: 'daily'
 priority: 1
 url: '/'
-urls: ['/index.html','/front/index.html','/front.html','/posts','/posts/index.html','/posts.html']
+urls: ['/index.html','/front/index.html','/front.html']
 styles: ['/vendor/masonry/component.css']
 scripts:
 	- '/vendor/masonry/masonry.pkgd.min.js'

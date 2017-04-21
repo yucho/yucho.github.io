@@ -1,0 +1,20 @@
+---
+layout: 'default'
+title: 'Posts'
+description: 'Quick thoughts on cat, girls, universe, and Colorado.'
+changefreq: 'daily'
+priority: 0.9
+url: '/posts'
+urls: ['/posts/','/posts/index.html','/posts.html']
+---
+
+<table class="u-full-width">
+	<tbody>
+		<% for post in @getCollection('posts').sortArray(date: -1): %>
+		<tr>
+			<td><time><%- post.date.toLocaleDateString() %></time></td>
+			<td><a href="<%= post.url %>"><%- post.title or post.name %></a></td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>
