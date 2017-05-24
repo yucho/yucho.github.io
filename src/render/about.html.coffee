@@ -75,9 +75,9 @@ div '.row', ->
 	div '.left-div', ->
 		div '.sky-block.sky-gradient', ->
 		img '.profile-pic',
-			src: "../images/yucho-bantay.jpg",
-			sizes: "100vw",
-			srcset: "../images/yucho-bantay.jpg 2988w",
+			src: "/images/yucho-bantay_1380x2453.jpg",
+			sizes: "(min-width: 550px) 460px, 100vw",
+			srcset: "/images/yucho-bantay_460x818.jpg 460w, /images/yucho-bantay_920x1636.jpg 920w, /images/yucho-bantay_1380x2453.jpg 1380w",
 			alt: "Yucho leaning on Bantay Bell Tower"
 
 	# Description
