@@ -22,8 +22,7 @@ A very omnivorous website that talks just about anything. It also happens to be 
 
 ## Task List
 
-- [x] about page
-- [x] more images
+- [ ] comments section
 - [ ] docpad-plugin-services
 - [ ] docpad-plugin-combiner
 - [ ] lint

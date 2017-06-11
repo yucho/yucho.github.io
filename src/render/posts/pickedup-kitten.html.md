@@ -14,7 +14,7 @@ OK fine, some owners perform well. I sure as hell don't. But I ain't no evil who
 
 A notorious sister of mine loves to buy pets and totally not clean up after them, therefore making us family members work. So, we ended up rearing a ferret, cats and dogs, various birds, lots of hamsters, and a spectrum of aquatics. Most of them either fated to premature death or runaway. I might add that absolutely no animal cruelty existed; only did idiocy.
 
-For example, out of the blue our hamster started twitching insanely like a scene in a horror movie and dropped dead. This happened back in high school years. We held it in our hands and rubbed, as if that would magically revive it. My sister wept all night. The cause of death was quite mysterious except in hindsight, I had sprayed and wiped the floor with a cleaner product an hour before the incident, and the hamster cage was near it… hmm.
+For example, out of the blue our hamster started twitching insanely like a scene in a horror movie and dropped dead. This happened back in high school years. We held the hamster in our hands and rubbed it as if that would magically revive it. My sister wept all night. The cause of death was quite mysterious except in hindsight, I had sprayed and wiped the floor with a cleaner product an hour before the incident, and the hamster cage was near it… hmm.
 
 When I was 6, I fed a baby sparrow using a syringe, applied too much pressure, and tiny grains bursted open its furry throat. *Pop!* Oops. That was a trippy moment. Yellow grains oozed out from somewhere they were't supposed to.
 

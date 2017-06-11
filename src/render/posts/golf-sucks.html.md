@@ -39,3 +39,5 @@ Another reason to love this game is a serendipitous encounter every time you pla
 What a brilliant idea. I almost wanted to turn to them and join the conversation. Why, oh why are golfers such wonderful people? These men just enlightened me that we possess the power to decide whether those tiny mammalian brains stay in skulls or splatter on the ground. [Me big man](https://www.youtube.com/watch?v=h-T6f9vCeaE "Family Guy clip") dominate. Yeah.
 
 Had I joined them, I wanted to say: "Dude, you're genius. Hold on, I got a better plan. Let's target your fucking forehead instead!"
+
+(End sarcasm).
