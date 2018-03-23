@@ -19,9 +19,6 @@ docpadConfig =
 
 	templateData:
 
-		# Path to store brick images
-		brickPath: '/images/bricks'
-
 		# Specify some site properties
 		site:
 			# The production url of our website
@@ -81,6 +78,10 @@ docpadConfig =
 				'/scripts/script.js'
 			]
 
+		# Other custom configs
+		# Path to brick images
+		brickPath: 'images/bricks'
+
 
 		# =================================
 		# Helper Functions
@@ -109,16 +110,16 @@ docpadConfig =
 		# Get the prepared site/document keywords
 		getPreparedKeywords: ->
 			# Merge the document keywords with the site keywords
-			@site.keywords.concat(@document.keywords or []).join(', ')
+			@site.keywords.concat(@document.keywords or []).join ', '
 
 		# Get my github repos
 		getGitHubProjects: ->
 			# Return global custom attribute
 			projects
 
-		# Get brick image for masonry
+		# Get brick images for masonry, return valid srcset markup
 		###
-		getBrickImage: (filename) ->
+		getBrickSrcset: (filename) ->
 			# Only accept string
 			return null if filename isnt 'string'
 
@@ -144,11 +145,17 @@ docpadConfig =
 
 	collections:
 
-		# Create a collection called posts
+		# Create a collection called bricks
+		# This contains all the images in the static path bricks. The files with
+		# names matching a post will be used as brick images for the post
+		# in masonry-style layout.
+		bricks: ->
+			@getCollection('files').findAllLive relativeOutDirPath: @config.templateData.brickPath, outFilename: $endsWith: ['.jpg', '.jpeg', '.gif', '.png']
+
 		# That contains all the documents that will be going to the out path posts
 		# except index.html
 		posts: ->
-			@getCollection('documents').findAllLive({relativeOutDirPath: 'posts', outFilename: {$ne: 'index.html'}})
+			@getCollection('documents').findAllLive {relativeOutDirPath: 'posts', outFilename: {$ne: 'index.html'}}
 
 
 	# =================================

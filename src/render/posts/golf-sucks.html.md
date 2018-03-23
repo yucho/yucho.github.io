@@ -4,8 +4,6 @@ title: 'Golf Rocks'
 description: 'The greatest sport there is, and a humble attempt to share this view.'
 keywords: 'golf, golf rocks, golf sucks, driving range'
 date: '7/25/2016'
-brickDimensions: ['450x450', '900x900', '1350x1350']
-brickType: 'png'
 ---
 
 <img src="../images/golfball-on-grass_1680x810.png" sizes="(min-width: 840px) 840px, 100vw" srcset="../images/golfball-on-grass_1080x521.png 1080w, ../images/golfball-on-grass_1680x810.png 1680w">

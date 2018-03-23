@@ -4,8 +4,6 @@ title: 'Picked Up a Kitten'
 description: 'My legacy of failure as a pet owner. And then there was an abandoned cat.'
 keywords: 'cat, kitten, stray, animal, pet, story'
 date: '7/23/2016'
-brickDimensions: ['450x450', '900x900', '1350x1350']
-brickType: 'jpg'
 ---
 
 A pet's worst nightmare is the owner.
