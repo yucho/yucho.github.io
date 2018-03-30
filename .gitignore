@@ -1,0 +1,8 @@
+# Node.js modules
+node_modules/
+
+# Metalsmith output
+dest/
+
+# OS X junk
+.DS_Store
