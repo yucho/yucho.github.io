@@ -34,7 +34,12 @@ exports.bundlestyles = (opts) -> (files, metalsmith, done) ->
 			return 1 if files[a].bundlestyles.priority > files[b].bundlestyles.priority
 			return 0
 
-		output[path.join options.outputDir, bundle] =
+		# Front matter outputDir can override
+		outputDir = options.outputDir
+		for name in bundles[bundle]
+			if files[name].bundlestyles.outputDir? then outputDir = files[name].bundlestyles.outputDir
+
+		output[path.join outputDir, bundle] =
 			contents: Buffer.concat (files[name].contents for name in bundles[bundle])
 
 	# Inject in metalsmith files

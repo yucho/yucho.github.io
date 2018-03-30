@@ -19,6 +19,8 @@
 	<link rel="stylesheet" href="styles/theme.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,300,600">
 
+	<script src="scripts/base.js"></script>
+
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 </head>
 <body>
