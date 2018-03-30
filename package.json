@@ -1,0 +1,43 @@
+{
+  "name": "astropolitan-project",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Yucho Ho's personal blog.",
+  "main": "index.coffee",
+  "scripts": {
+    "build": "coffee index.coffee",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yucho/metal.git"
+  },
+  "keywords": [
+    "Yucho",
+    "Ho",
+    "blog"
+  ],
+  "author": "Yucho Ho <yucho.ho@gmail.com> (https://yuchoho.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yucho/metal/issues"
+  },
+  "homepage": "https://yuchoho.com",
+  "dependencies": {
+    "coffeescript": "^2.2.3",
+    "jstransformer-eco": "^0.1.0",
+    "jstransformer-nunjucks": "^0.5.0",
+    "metalsmith": "^2.3.0",
+    "metalsmith-collections": "^0.9.0",
+    "metalsmith-debug": "^1.2.0",
+    "metalsmith-ignore": "^0.1.2",
+    "metalsmith-in-place": "^4.1.1",
+    "metalsmith-jstransformer-partials": "^2.0.0",
+    "metalsmith-layouts": "^2.1.0",
+    "metalsmith-markdown": "^0.2.2",
+    "metalsmith-permalinks": "^0.5.0",
+    "metalsmith-writemetadata": "^0.4.5",
+    "multimatch": "^2.1.0",
+    "nunjucks": "^3.1.2"
+  }
+}

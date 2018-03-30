@@ -1,0 +1,8 @@
+---
+layout: default.html.eco
+description: "A very omnivorous website that talks just about anything. It also happens to be Yucho Ho's personal site."
+---
+
+<ul class="grid effect-2" id="grid">
+	<h1>Test Index</h1>
+</ul>

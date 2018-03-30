@@ -1,0 +1,14 @@
+---
+partial: true
+name: 'navbar'
+---
+<nav class="navbar">
+	<span class="navbar-collapse"><i class="material-icons navbar-icon">view_headline</i></span>
+	<div class="container">
+		<ul class="navbar-list">
+			<li class="navbar-item"><a class="navbar-link" href="<%= @site.url %>">Posts</a></li>
+			<li class="navbar-item"><a class="navbar-link" href="<%= @site.url %>/about">About</a></li>
+			<li class="navbar-item"><a class="navbar-link" href="<%= @site.url %>/projects">Projects</a></li>
+		</ul>
+	</div>
+</nav>
