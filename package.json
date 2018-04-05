@@ -1,0 +1,35 @@
+{
+  "name": "scaffold-metalsmith",
+  "version": "1.0.0",
+  "private": true,
+  "description": "My setup for metalsmith site generation.",
+  "main": "index.coffee",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yucho/scaffold-metalsmith.git"
+  },
+  "keywords": [
+    "metalsmith",
+    "scaffold",
+    "template",
+    "static",
+    "site",
+    "generator"
+  ],
+  "author": "Yucho Ho <yucho.ho@gmail.com> (https://yuchoho.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yucho/scaffold-metalsmith/issues"
+  },
+  "homepage": "https://github.com/yucho/scaffold-metalsmith#readme",
+  "dependencies": {
+    "clean-css": "^4.1.11",
+    "metalsmith": "^2.3.0",
+    "metalsmith-clean-css": "^6.0.0",
+    "metalsmith-concat-convention": "^1.2.0",
+    "metalsmith-uglify": "^2.2.0"
+  }
+}
