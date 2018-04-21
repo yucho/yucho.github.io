@@ -1,8 +1,3 @@
----
-bundlestyles:
-  name: base.js
-  priority: 200 # Follows Modernizr
----
 // Avoid `console` errors in browsers that lack a console.
 (function() {
     var method;

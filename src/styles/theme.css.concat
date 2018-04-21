@@ -1,0 +1,10 @@
+---
+files:
+- styles/theme/normalize.css
+- styles/theme/h5bp.css
+- styles/theme/skeleton/skeleton.css
+- styles/theme/skeleton/skeleton-custom.css
+- styles/theme/style.css
+- styles/masonry/component.css
+---
+/* Concatenated css in correct order */

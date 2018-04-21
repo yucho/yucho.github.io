@@ -1,9 +1,3 @@
----
-# Gets bundled in theme.css and used across all pages.
-bundlestyles:
-  name: theme.css
-  priority: 200 # Follows boilerplates. Basic styling.
----
 /*
 * Skeleton V2.0.4
 * Copyright 2014, Dave Gamache

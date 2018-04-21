@@ -1,20 +1,24 @@
 metalsmith	= require "metalsmith"
+cleancss	= require "metalsmith-clean-css"
+collections	= require "metalsmith-collections"
+concat		= require "metalsmith-concat-convention"
 debug		= require "metalsmith-debug"
 ignore		= require "metalsmith-ignore"
 inplace		= require "metalsmith-in-place"
-layouts		= require "metalsmith-layouts"
+layouts		= require "metalsmith-nestedlayouts"
+markdown	= require "metalsmith-markdown"
 partials	= require "metalsmith-jstransformer-partials"
-writemeta	= require "metalsmith-writemetadata"
+purifycss	= require "metalsmith-purifycss"
+stylus		= require "metalsmith-stylus"
+uglify		= require "metalsmith-uglify"
 {inspect}	= require "util"
-{bundlestyles} = require "./util.coffee"
+{prepare}	= require "./util.coffee"
 
 path = require "path"
 
-process.env.DEBUG="metalsmith:*"
-
-# Metalsmith instance
+# Metalsmith, build a website!
 metalsmith __dirname
-	# Useful in templates
+
 	.metadata
 		site:
 			author: "Yucho Ho"
@@ -23,43 +27,79 @@ metalsmith __dirname
 			description: "Yucho Ho's personal blog."
 			keywords: "Yucho Ho, blog"
 	
-	# Source directory
 	.source "./src"
 
-	# Output directory
 	.destination "./dest"
+
+	# Pre-build tasks
+	.use prepare()
+
+	# Create collections of
+	.use collections
+		# All posts
+		posts:
+			pattern: "posts/*.md"
+			sortBy: "date"
+			reverse: true
+
+		# All brick images
+		bricks:
+			pattern: "images/bricks/*.@(gif|jpg|jpeg|png|svg)"
+
+	# Render stylus
+	.use stylus()
+
+	# Bundle JS and CSS by purpose
+	.use concat
+		extname: ".concat"
+
+	.use (f,m,d) ->
+		###
+		for name in Object.keys f
+			arr = name.split('.')
+			if not ['jpg', 'jpeg','png','gif'].includes arr[arr.length - 1]
+				console.log f[name]
+		###
+		d()
+
+	# Render markdown
+	.use markdown()
 
 	# Render partials
 	.use partials()
 
-	# Pass layouts to renderer
+	# Render CoffeeKup templates
+	.use inplace
+		pattern: "**/*.coffeekup"
+
+	# Render layouts
 	.use layouts
 		directory: "src/layouts"
 
-	# Render cs templates
+	# Render ECO templates
 	.use inplace
-		engine: "eco"
-		engineOptions:
-			path: "src"
+		pattern: "**/*.eco"
 
-	# Bundle some css
-	.use bundlestyles
-		outputDir: "styles"
-###
-	# Debug
-	.use (files, metadata) ->
-		for key, value of files
-			if not ['jpg', 'jpeg', 'png', 'gif', 'svg'].includes key.split('.').pop()
-				console.log key
-				console.log ''
-				console.log value
-				console.log ''
-###
-	# Not to render
+	# Minify JS
+	.use uglify
+		sameName: true
+		uglify:
+			sourceMap: false
+
+	# Purify CSS
+	.use purifycss
+		content: ["*.html", "*.js"]
+		css: ["styles/theme.css"]
+		output: "styles/theme.css"
+
+	# Minify CSS
+	.use cleancss
+		files: ["src/**/*.css"]
+
+	# Delete from output
 	.use ignore [
 		"layouts/*"
 	]
 
-	# Build my blog
 	.build (err) ->
 		if err then throw err

@@ -1,8 +1,3 @@
----
-bundlestyles:
-  name: base.js
-  priority: 1000 # Should appear near last
----
 // http://getskeleton.com/js/site.js
 // JS snippet for dockable navbar
 $(document).ready(function() {

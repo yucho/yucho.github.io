@@ -1,9 +1,3 @@
----
-# Gets bundled in theme.css and used across all pages.
-bundlestyles:
-  name: theme.css
-  priority: 0 # Comes before everything
----
 /*! normalize.css v1.1.3 | MIT License | git.io/normalize */
 
 /* ==========================================================================

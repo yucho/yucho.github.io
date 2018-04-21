@@ -1,9 +1,3 @@
----
-bundlestyles:
-  name: base.js
-  outputDir: scripts
-  priority: 0 # Comes before everything
----
 /*!
  * jQuery JavaScript Library v2.1.0
  * http://jquery.com/

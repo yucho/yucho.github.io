@@ -1,6 +1,5 @@
 ---
 partial: true
-name: 'navbar'
 ---
 <nav class="navbar">
 	<span class="navbar-collapse"><i class="material-icons navbar-icon">view_headline</i></span>

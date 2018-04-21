@@ -1,0 +1,9 @@
+---
+files:
+- scripts/base/jquery.js
+- scripts/base/modernizr.js
+- scripts/base/log.js
+- scripts/base/site.js
+- scripts/base/custom.js
+---
+// Concatenated js in correct order
