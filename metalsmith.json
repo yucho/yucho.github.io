@@ -1,0 +1,24 @@
+{
+  "source": "src",
+  "destination": "dest",
+  "metadata": {
+    "site": {
+      "title": "yoursitetitle"
+    }
+  },
+  "plugins": {
+    "metalsmith-concat-convention": {
+      "extname": ".concat"
+    },
+    "metalsmith-clean-css": {
+      "files": ["src/scripts/**/*.css"]
+    },
+    "metalsmith-uglify": {
+      "sameName": true,
+      "uglify": {"sourceMap": false}
+    },
+    "metalsmith-sitemap": {
+      "hostname": "https://yoursitehost.com"
+    }
+  }
+}

@@ -27,9 +27,11 @@
   "homepage": "https://github.com/yucho/scaffold-metalsmith#readme",
   "dependencies": {
     "clean-css": "^4.1.11",
+    "jsonfile": "^4.0.0",
     "metalsmith": "^2.3.0",
     "metalsmith-clean-css": "^6.0.0",
     "metalsmith-concat-convention": "^1.2.0",
+    "metalsmith-sitemap": "^1.2.0",
     "metalsmith-uglify": "^2.2.0"
   }
 }
