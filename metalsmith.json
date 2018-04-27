@@ -17,6 +17,15 @@
       "sameName": true,
       "uglify": {"sourceMap": false}
     },
+    "metalsmith-partial": {
+      "directory": "./lib/partials",
+      "engine": "eco"
+    },
+    "metalsmith-nestedlayouts": {
+      "directory": "lib/layouts",
+      "pattern": "**/*.@(eco|html)"
+    },
+    "metalsmith-in-place": true,
     "metalsmith-sitemap": {
       "hostname": "https://yoursitehost.com"
     }

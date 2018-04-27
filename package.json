@@ -5,6 +5,7 @@
   "description": "My setup for metalsmith site generation.",
   "main": "index.coffee",
   "scripts": {
+    "build": "coffee index.coffee",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -28,9 +29,13 @@
   "dependencies": {
     "clean-css": "^4.1.11",
     "jsonfile": "^4.0.0",
+    "jstransformer-eco": "^0.1.0",
     "metalsmith": "^2.3.0",
     "metalsmith-clean-css": "^6.0.0",
     "metalsmith-concat-convention": "^1.2.0",
+    "metalsmith-in-place": "^4.1.1",
+    "metalsmith-nestedlayouts": "^2.2.2",
+    "metalsmith-partial": "^0.1.0",
     "metalsmith-sitemap": "^1.2.0",
     "metalsmith-uglify": "^2.2.0"
   }

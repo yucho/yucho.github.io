@@ -1,0 +1,5 @@
+---
+layout: default.html.eco
+---
+<h1>Welcome</h1>
+<p>Hello world! This is HTML5 Boilerplate.</p>

@@ -5,7 +5,10 @@ metalsmith  = require "metalsmith"
 
 # Plugins
 concat      = require "metalsmith-concat-convention"
+inplace     = require "metalsmith-in-place"
+layouts     = require "metalsmith-nestedlayouts"
 minify      = require "metalsmith-clean-css"
+partials    = require "metalsmith-partial"
 sitemap     = require "metalsmith-sitemap"
 uglify      = require "metalsmith-uglify"
 
@@ -30,6 +33,15 @@ metalsmith __dirname
 
     # Uglify JS
     .use uglify opts["metalsmith-uglify"]
+
+    # Render partials
+    .use partials opts["metalsmith-partial"]
+
+    # Render layouts
+    .use layouts opts["metalsmith-nestedlayouts"]
+
+    # Render templates
+    .use inplace opts["metalsmith-in-place"]
 
     # Generate sitemap.xml
     .use sitemap opts["metalsmith-sitemap"]
