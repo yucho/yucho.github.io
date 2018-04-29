@@ -12,6 +12,8 @@ partials    = require "metalsmith-partial"
 sitemap     = require "metalsmith-sitemap"
 uglify      = require "metalsmith-uglify"
 
+prebuild    = require "./lib/prebuild.js"
+
 # Read config
 path        = require "path"
 jsonfile    = require "jsonfile"
@@ -24,6 +26,9 @@ metalsmith __dirname
     .source config.source
     .destination config.destination
     .metadata config.metadata
+
+    # Prebuild tasks
+    .use prebuild()
 
     # Concatenate JS and CSS
     .use concat opts["metalsmith-concat-convention"]

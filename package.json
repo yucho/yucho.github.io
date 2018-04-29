@@ -5,7 +5,8 @@
   "description": "My setup for metalsmith site generation.",
   "main": "index.coffee",
   "scripts": {
-    "build": "coffee index.coffee",
+    "build": "metalsmith",
+    "serve": "coffee index.coffee --serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -36,7 +37,9 @@
     "metalsmith-in-place": "^4.1.1",
     "metalsmith-nestedlayouts": "^2.2.2",
     "metalsmith-partial": "^0.1.0",
+    "metalsmith-serve": "0.0.7",
     "metalsmith-sitemap": "^1.2.0",
-    "metalsmith-uglify": "^2.2.0"
+    "metalsmith-uglify": "^2.2.0",
+    "yargs": "^11.0.0"
   }
 }

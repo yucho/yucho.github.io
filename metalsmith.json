@@ -3,10 +3,12 @@
   "destination": "dest",
   "metadata": {
     "site": {
-      "title": "yoursitetitle"
+      "title": "yoursitetitle",
+      "url": "https://yoursitehost.com"
     }
   },
   "plugins": {
+    "./lib/prebuild.js": true,
     "metalsmith-concat-convention": {
       "extname": ".concat"
     },
