@@ -28,7 +28,7 @@ if images?.length > 0
 	# Check if naming format is valid
 	# 
 	# case: all valid -> return srcset
-	# case: some valid, some invalid -> return srcset using valid only
+	# case: some valid, some invalid -> return srcset only using valid
 	# case: all invalid -> return src using an invalid image
 	if validimages > 0
 		# Sort images by width

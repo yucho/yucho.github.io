@@ -12,7 +12,7 @@ purifycss	= require "metalsmith-purifycss"
 stylus		= require "metalsmith-stylus"
 uglify		= require "metalsmith-uglify"
 {inspect}	= require "util"
-{prepare}	= require "./util.coffee"
+{pre, post}	= require "./util.coffee"
 
 path = require "path"
 
@@ -32,7 +32,7 @@ metalsmith __dirname
 	.destination "./dest"
 
 	# Pre-build tasks
-	.use prepare()
+	.use pre()
 
 	# Create collections of
 	.use collections
@@ -52,15 +52,6 @@ metalsmith __dirname
 	# Bundle JS and CSS by purpose
 	.use concat
 		extname: ".concat"
-
-	.use (f,m,d) ->
-		###
-		for name in Object.keys f
-			arr = name.split('.')
-			if not ['jpg', 'jpeg','png','gif'].includes arr[arr.length - 1]
-				console.log f[name]
-		###
-		d()
 
 	# Render markdown
 	.use markdown()

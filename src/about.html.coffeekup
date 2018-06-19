@@ -1,6 +1,7 @@
 ---
 layout: default.html.eco
 title: 'About'
+url: 'about'
 description: "A brief overview of what this website is about. Unfortunately, it is not about money, violence, and sex."
 styles: ["styles/about.css"]
 ---

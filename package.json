@@ -36,11 +36,15 @@
     "metalsmith-in-place": "^4.1.1",
     "metalsmith-jstransformer-partials": "^2.0.0",
     "metalsmith-markdown": "^0.2.2",
-    "metalsmith-nestedlayouts": "^2.2.0",
+    "metalsmith-nestedlayouts": "^2.2.2",
     "metalsmith-permalinks": "^0.5.0",
     "metalsmith-purifycss": "^0.3.0",
+    "metalsmith-serve": "0.0.7",
     "metalsmith-stylus": "^3.0.0",
     "metalsmith-uglify": "^2.2.0",
-    "multimatch": "^2.1.0"
+    "metalsmith-watch": "^1.0.3",
+    "multimatch": "^2.1.0",
+    "upath": "^1.0.4",
+    "yargs": "^11.1.0"
   }
 }
