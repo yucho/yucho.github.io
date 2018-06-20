@@ -2,5 +2,5 @@
 layout: default.html.eco
 url: "/"
 ---
-<h1><a href="<%- @geturl() %>">Welcome</a></h1>
+<h1><a href="<%- @getURL() %>">Welcome</a></h1>
 <p>Hello world! This is HTML5 Boilerplate.</p>
