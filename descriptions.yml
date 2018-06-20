@@ -1,0 +1,45 @@
+# description.yml - List of all files in this project and their descriptions
+
+.editorconfig:
+  Config used by major editors to keep uniform coding style across the project
+.gitattributes:
+  Defines attributes for each path, used by Git-LFS to track binary files in a separate database
+.githooks/pre-commit/solicit-description.js:
+  Script that enforces contributors to provide a description for each file in this project
+.gitignore:
+  List of files to be ignored (not committed) by Git
+.npmrc:
+  The npm config file used to prevent generating package-lock.json
+descriptions.yml:
+  List of all tracked files in this project and their descriptions
+index.js:
+  Entry point for this project where website generation begins
+lib/layouts/default.html.eco:
+  Default layout of this website
+lib/partials/default-scripts.html.eco:
+  Set of JavaScripts loaded by default by the webpage
+lib/prebuild.js:
+  Prebuild tasks for Metalsmith to provide helper functions and process data into
+  more useful format, meant to be run before other plugins
+package.json:
+  Config for node package, required for any node application
+README.md:
+  Describes what this project is about. Displayed on GitHub and NPM repositories
+src/.htaccess:
+  Apache server configs obtained from HTML5 boilerplate to ensure better user experience
+src/404.html:
+  An error page to serve when requested file is not found
+src/humans.txt:
+  Web initiative to reclaim internet for the people. http://humanstxt.org/
+src/index.html.eco:
+  Template for the home page
+src/robots.txt:
+  Information for web robots. http://www.robotstxt.org/
+src/scripts/base.js.concat:
+  JavaScripts that are frequently included across this website get concatenated into this file
+src/scripts/base/log.js:
+  Avoid `console` errors in browsers that lack a console
+src/styles/base.css.concat:
+  CSS files that are frequently included across this website get concatenated into this file
+src/styles/base/normalize.css:
+  Makes browsers render all elements more consistently and in line with modern standards

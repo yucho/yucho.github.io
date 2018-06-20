@@ -29,6 +29,7 @@
   "homepage": "https://github.com/yucho/scaffold-metalsmith#readme",
   "dependencies": {
     "clean-css": "^4.1.11",
+    "git-hooks": "^1.1.10",
     "jsonfile": "^4.0.0",
     "jstransformer-eco": "^0.1.0",
     "metalsmith": "^2.3.0",
