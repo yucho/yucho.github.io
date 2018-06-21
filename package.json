@@ -1,11 +1,12 @@
 {
   "name": "astropolitan-project",
-  "version": "1.0.0",
   "private": true,
-  "description": "Yucho Ho's personal blog.",
+  "version": "1.0.0",
+  "description": "Yucho Ho's personal website.",
   "main": "index.coffee",
   "scripts": {
-    "build": "coffee index.coffee",
+    "build": "node index.js",
+    "serve": "node index.js --serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,6 +26,7 @@
   "homepage": "https://yuchoho.com",
   "dependencies": {
     "clean-css": "^4.1.11",
+    "git-hooks": "^1.1.10",
     "jstransformer-coffeekup": "^0.3.0",
     "jstransformer-eco": "^0.1.0",
     "metalsmith": "^2.3.0",
@@ -38,8 +40,9 @@
     "metalsmith-markdown": "^0.2.2",
     "metalsmith-nestedlayouts": "^2.2.2",
     "metalsmith-permalinks": "^0.5.0",
+    "metalsmith-pretty-serve": "0.0.1",
     "metalsmith-purifycss": "^0.3.0",
-    "metalsmith-serve": "0.0.7",
+    "metalsmith-sitemap": "^1.2.0",
     "metalsmith-stylus": "^3.0.0",
     "metalsmith-uglify": "^2.2.0",
     "metalsmith-watch": "^1.0.3",

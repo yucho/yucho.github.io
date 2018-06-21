@@ -5,9 +5,8 @@ partial: true
 	<span class="navbar-collapse"><i class="material-icons navbar-icon">view_headline</i></span>
 	<div class="container">
 		<ul class="navbar-list">
-			<li class="navbar-item"><a class="navbar-link" href="<%= @geturl @site.url %>">Posts</a></li>
-			<li class="navbar-item"><a class="navbar-link" href="<%= @geturl 'about' %>">About</a></li>
-			<li class="navbar-item"><a class="navbar-link" href="<%= @geturl 'projects' %>">Projects</a></li>
+			<li class="navbar-item"><a class="navbar-link" href="<%= @getRootURL() %>">Posts</a></li>
+			<li class="navbar-item"><a class="navbar-link" href="<%= @getURL 'about' %>">About</a></li>
 		</ul>
 	</div>
 </nav>

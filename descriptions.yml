@@ -1,0 +1,121 @@
+# description.yml - List of all files in this project and their descriptions
+
+.editorconfig:
+  Config used by major editors to keep uniform coding style across the project
+.gitattributes:
+  Defines attributes for each path, used by Git-LFS to track binary files in a separate database
+.githooks/pre-commit/solicit-description.js:
+  Script that enforces contributors to provide a description for each file in this project
+.gitignore:
+  List of files to be ignored (not committed) by Git
+.npmrc:
+  The npm config file used to prevent generating package-lock.json
+descriptions.yml:
+  List of all tracked files in this project and their descriptions
+index.js:
+  Entry point for this project where website generation begins
+LICENSE.md:
+  License for this project, basically stating that anyone can use the source if they mention my name and include the same license in their project
+lib/prebuild.js:
+  Prebuild tasks for Metalsmith to provide helper functions and process data into
+  more useful format, meant to be run before other plugins
+package.json:
+  Config for node package, required for any node application
+README.md:
+  Describes what this project is about. Displayed on GitHub and NPM repositories
+src/.htaccess:
+  Apache server configs obtained from HTML5 boilerplate to ensure better user experience
+src/404.html:
+  An error page to serve when requested file is not found
+src/about.html.coffeekup:
+  About page introducing what this website is about
+src/humans.txt:
+  Web initiative to reclaim internet for the people. http://humanstxt.org/
+src/images/bigboss01.jpg:
+  Image of my cat, used in the post "Picked Up a Kitten"
+src/images/bigboss02.jpg:
+  Image of my cat, used in the post "Picked Up a Kitten"
+src/images/bigboss03.jpg:
+  Image of my cat, used in the post "Picked Up a Kitten"
+src/images/bricks/golf-sucks_1350x1350.png:
+  CG image that I created, used as brick image for the post "Golf Rocks"
+src/images/bricks/golf-sucks_450x450.png:
+  CG image that I created, used as brick image for the post "Golf Rocks"
+src/images/bricks/golf-sucks_900x900.png:
+  CG image that I created, used as brick image for the post "Golf Rocks"
+src/images/bricks/pickedup-kitten_1350x1350.jpg:
+  Image of my cat, used as brick image for the post "Picked Up a Kitten"
+src/images/bricks/pickedup-kitten_450x450.jpg:
+  Image of my cat, used as brick image for the post "Picked Up a Kitten"
+src/images/bricks/pickedup-kitten_900x900.jpg:
+  Image of my cat, used as brick image for the post "Picked Up a Kitten"
+src/images/golfball-on-grass_1080x521.png:
+  CG image that I created, used in the post "Golf Rocks"
+src/images/golfball-on-grass_1680x810.png:
+  CG image that I created, used in the post "Golf Rocks"
+src/images/yucho-bantay_1380x2453.jpg:
+  A photo of myself standing before the Bantay Church in the Philippines, used in About page
+src/images/yucho-bantay_460x818.jpg:
+  A photo of myself standing before the Bantay Church in the Philippines, used in About page
+src/images/yucho-bantay_920x1636.jpg:
+  A photo of myself standing before the Bantay Church in the Philippines, used in About page
+src/index.html.eco:
+  Template for the home page
+src/layouts/default.html.eco:
+  Default layout used by most pages on this website
+src/layouts/post.html.eco:
+  Layout for the posts, nested inside the default layout
+src/partials/brick.html.coffeekup:
+  Partial that searches for brick images that have the same basename as the posts filename
+src/partials/navbar.html.eco:
+  The navigation bar used across the website
+src/posts/golf-sucks.md:
+  Post "Golf Rocks" - a sarcastic take on golf
+src/posts/got-into-barfight.md:
+  Post "Got Into a Bar Fight" - my experience of bar fight
+src/posts/pickedup-kitten.md:
+  Post "Picked Up a Kitten" - an essay on picking up a baby cat
+src/posts/stolen-in-paris.md:
+  Post "Getting Stolen in Paris" - recalling a theft taken place in Paris
+src/posts/terrible-reader.md:
+  Post "Being a Terrible Reader" - a criticism on formatting of published books
+src/robots.txt:
+  Information for web robots. http://www.robotstxt.org/
+src/scripts/base.js.concat:
+  JavaScripts that are frequently included across this website get concatenated into this file
+src/scripts/base/custom.js:
+  JavaScript loaded across the website to fine-tune design, etc.
+src/scripts/base/jquery.js:
+  A powerful library for querying and manipulating DOM
+src/scripts/base/log.js:
+  Avoids `console` errors in browsers that lack a console
+src/scripts/base/modernizr.js:
+  A library that detects browser features and optionally polyfills them. Customize as needed. https://modernizr.com/
+src/scripts/base/site.js:
+  Initializes the navivation bar
+src/scripts/masonry.js.concat:
+  Masonry.js related files are concatenated into this file
+src/scripts/masonry/AnimOnScroll.js:
+  Performs CSS animation of elements upon entering the screen on scroll
+src/scripts/masonry/classie.js:
+  Outdated library to add/remove classes from DOM elements. Replacing it in the future
+src/scripts/masonry/imagesloaded.js:
+  Lets you know once all images on the page are loaded
+src/scripts/masonry/masonry.pkgd.min.js:
+  Library for masonry layout. https://masonry.desandro.com/
+src/styles/about.css:
+  CSS used only in About page
+src/styles/masonry/component.css:
+  CSS used by Masonry.js components
+src/styles/theme.css.concat:
+  CSS files that are used as a "theme" or general design across the website get concatenated into this file
+src/styles/theme/h5bp.css:
+  HTML5 Boilerplate, much researched cross-browser styling
+src/styles/theme/normalize.css:
+  Makes browsers render all elements more consistently and in line with modern standards
+src/styles/theme/skeleton/skeleton-custom.css:
+  Overrides skeleton.css to best suit this website
+src/styles/theme/skeleton/skeleton.css:
+  A dead simple, responsive boilerplate. http://getskeleton.com/
+src/styles/theme/style.styl:
+  Overrides other CSS files to best suit this website

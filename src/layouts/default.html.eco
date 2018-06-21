@@ -16,7 +16,7 @@
 	<meta name="keywords" content="<%= @keywords or @site.keywords %>" />
 
 	<!-- Styles -->
-	<link rel="stylesheet" href="styles/theme.css">
+	<link rel="stylesheet" href="/styles/theme.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,300,600">
 	<% if @styles? : %>
 		<% for style in @styles: %>
@@ -24,6 +24,8 @@
 		<% end %>
 	<% end %>
 
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 </head>
 <body>
@@ -33,7 +35,7 @@
 
 	<div class="container">
 		<header class="site-header">
-			<h2 class="site-title"><a href="<%= @site.url %>"><%- @site.title %></a></h2>
+			<h2 class="site-title"><a href="<%= @getRootURL() %>"><%- @site.title %></a></h2>
 			<%- @partial "navbar.html" %>
 		</header>
 		<article class="site-content">
@@ -43,9 +45,9 @@
 	</div>
 
 	<!-- Scripts -->
-	<script src="scripts/base.js"></script>
+	<script src="/scripts/base.js"></script>
 	<% if @masonry : %>
-	<script src="scripts/masonry.js"></script>
+	<script src="/scripts/masonry.js"></script>
 	<script>
 	document.addEventListener("DOMContentLoaded", function() {
 	    new AnimOnScroll(document.getElementById('grid'), {
