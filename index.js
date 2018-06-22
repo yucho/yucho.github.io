@@ -46,8 +46,9 @@ metalsmith(__dirname)
     // Concatenate some files to reduce the number of files and HTTP requests
     .use(concatenateFiles())
 
-    // Minify concatenated JS files and generate source map on dev mode
-    .use(uglifyJS())
+    // Transpile and minify concatenated JS files with Babel and UglifyJS.
+    // Generate source map on dev env
+    .use(minifyJS())
 
     // Create collections of posts, masonry brick images, etc.
     .use(createCollections())
@@ -95,16 +96,27 @@ function concatenateFiles() {
     return concat({ extname: ".concat" });
 }
 
-function uglifyJS() {
+function minifyJS() {
     return function(files, metalsmith, done) {
-        const uglify = require("metalsmith-uglify");
         const metadata = metalsmith.metadata();
-        const opts = { "sameName": true };
+        const babel = require("metalsmith-babel");
+        const babelOpts = {
+            presets: [["env", {"targets": {
+                "browsers": [ ">0.25%", "ie 11", "safari > 9" ]
+            }}]],
+            minified: true
+        };
+        // Generate source map in dev env
+        if(metadata.portserve) {
+            Object.assign(babelOpts, {sourceMaps: true});
+        }
+        const uglify = require("metalsmith-uglify");
+        const uglifyOpts = { "sameName": true };
+        // Don't generate source map in production env
+        if(!metadata.portserve) Object.assign(uglifyOpts, {uglify: {sourceMap: false}});
 
-        // Don't generate source map in production mode
-        if(!metadata.portserve) Object.assign(opts, {uglify: {sourceMap: false}});
-
-        uglify(opts)(files, metalsmith, done);
+        babel(babelOpts)(files, metalsmith);
+        uglify(uglifyOpts)(files, metalsmith, done);
     }
 }
 
