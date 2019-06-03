@@ -2,54 +2,28 @@
   "name": "astropolitan-project",
   "private": true,
   "version": "1.0.0",
-  "description": "Yucho Ho's personal website.",
+  "description": "Yucho Ho's personal website",
   "main": "index.coffee",
   "scripts": {
     "build": "node index.js",
-    "serve": "node index.js --serve",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "node lib/server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yucho/metal.git"
   },
-  "keywords": [
-    "Yucho",
-    "Ho",
-    "blog"
-  ],
   "author": "Yucho Ho <yucho.ho@gmail.com> (https://yuchoho.com)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/yucho/metal/issues"
   },
   "homepage": "https://yuchoho.com",
-  "dependencies": {
-    "babel-preset-env": "^1.7.0",
-    "clean-css": "^4.1.11",
+  "devDependencies": {
+    "chokidar": "^3.0.0",
+    "express": "^4.17.1",
+    "open": "^6.3.0",
     "git-hooks": "^1.1.10",
-    "jstransformer-coffeekup": "^0.3.0",
     "jstransformer-eco": "^0.1.0",
-    "metalsmith": "^2.3.0",
-    "metalsmith-babel": "^4.3.0",
-    "metalsmith-clean-css": "^6.0.0",
-    "metalsmith-collections": "^0.9.0",
-    "metalsmith-concat-convention": "^1.2.0",
-    "metalsmith-debug": "^1.2.0",
-    "metalsmith-ignore": "^0.1.2",
-    "metalsmith-in-place": "^4.1.1",
-    "metalsmith-jstransformer-partials": "^2.0.0",
-    "metalsmith-markdown": "^0.2.2",
-    "metalsmith-nestedlayouts": "^2.2.2",
-    "metalsmith-permalinks": "^0.5.0",
-    "metalsmith-pretty-serve": "0.0.1",
-    "metalsmith-purifycss": "^0.3.0",
-    "metalsmith-sitemap": "^1.2.0",
-    "metalsmith-stylus": "^3.0.0",
-    "metalsmith-uglify": "^2.2.0",
-    "metalsmith-watch": "^1.0.3",
-    "multimatch": "^2.1.0",
-    "upath": "^1.0.4",
-    "yargs": "^11.1.0"
+    "tmp": "^0.1.0"
   }
 }

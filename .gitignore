@@ -1,8 +1,11 @@
-# Node.js modules
+# Ignore build directory
+dest/
+
+# Ignore Node modules
 node_modules/
 
-# Metalsmith output
-dest/
+# Ignore package-lock for personal project
+package-lock.json
 
 # OS X junk
 .DS_Store
