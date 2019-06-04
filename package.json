@@ -25,6 +25,7 @@
     "jstransformer": "^1.0.0",
     "jstransformer-eco": "^0.1.0",
     "open": "^6.3.0",
-    "tmp": "^0.1.0"
+    "tmp": "^0.1.0",
+    "upath": "^1.1.2"
   }
 }
