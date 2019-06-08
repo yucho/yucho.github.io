@@ -22,8 +22,7 @@
     "express": "^4.17.1",
     "front-matter": "^3.0.2",
     "git-hooks": "^1.1.10",
-    "jstransformer": "^1.0.0",
-    "jstransformer-eco": "^0.1.0",
+    "mustache": "^3.0.1",
     "open": "^6.3.0",
     "tmp": "^0.1.0",
     "upath": "^1.1.2"
