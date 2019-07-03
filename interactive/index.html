@@ -12,14 +12,16 @@
   <script>
     window.addEventListener('load', function() {
       const interactive = new Interactive();
-      document.querySelector('.start').addEventListener('click', function() {
+      const button = document.querySelector('.start');
+      button.innerHTML = 'Start Interactive';
+      button.addEventListener('click', function() {
         interactive.play();
       });
       interactive.play();
     });
   </script>
 
-  <button class="start">Start Interactive</button>
+  <button class="start">Loading...</button>
 
   <style>
     .html, .body {
