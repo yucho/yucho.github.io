@@ -9,7 +9,54 @@
 </head>
 
 <body>
+
+  <section class="container">
+    <div id="icon"></div>
+    <button class="start">Loading...</button>
+  </section>
+
   <script>
+    const icon = document.getElementById('icon');
+    const wrapper = createElement({
+      parent: icon, classes: 'wrapper'
+    });
+    const cube = createElement({
+      parent: wrapper, classes: 'cube'
+    });
+    const faces = addFaces(cube);
+
+    function addFaces(parent) {
+      const opts = (className) => ({
+        parent: parent,
+        classes: `face ${className}`,
+        text: ''
+      });
+      return [
+        createElement(opts('front')),
+        createElement(opts('left')),
+        createElement(opts('right')),
+        createElement(opts('top')),
+        createElement(opts('bottom')),
+        createElement(opts('back'))
+      ];
+    }
+
+    function createElement(opts) {
+      const defaults = { tag: 'div' };
+      const {
+        parent, tag, classes, text
+      } = Object.assign(defaults, opts);
+      const ele = document.createElement(tag);
+      if (parent) { parent.appendChild(ele) }
+      if (classes) { addClasses(ele, classes) }
+      if (text) { ele.innerText = text }
+      return ele;
+    }
+
+    function addClasses(ele, classes) {
+      ele.classList.add(...classes.split(' '));
+    }
+
     window.addEventListener('load', function() {
       const interactive = new Interactive();
       const button = document.querySelector('.start');
@@ -17,13 +64,13 @@
       button.addEventListener('click', function() {
         interactive.play();
       });
-      interactive.play();
     });
   </script>
 
-  <button class="start">Loading...</button>
-
   <style>
+    * {
+      box-sizing: border-box;
+    }
     .html, .body {
       width: 100%;
       height: 100%;
@@ -31,15 +78,12 @@
       padding: 0;
     }
     .start {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
       font-size: 30px;
       color: #eee;
       background: #222;
       border: 1px solid #333;
       border-radius: 4px;
+      margin: 0 auto;
       padding: 24px;
       cursor: pointer;
       transition: all 0.1s ease-out;
@@ -49,6 +93,65 @@
       background: #444;
       border: 1px solid #555;
       padding: 48px;
+    }
+    .container {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    #icon {
+      position: relative;
+      margin: 4em auto;
+      width: 200px;
+      height: 200px;
+      perspective: 500px;
+    }
+    .face {
+      margin: 15%;
+      position: absolute;
+      width: 70%;
+      height: 70%;
+      padding: 1em;
+      border: 1px dashed black;
+    }
+    .wrapper {
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      animation: spin 16s linear infinite;
+    }
+    .cube {
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transform: rotateZ(35.264deg) rotateX(45deg);
+    }
+    @keyframes spin {
+      from {
+        transform: rotateY(0deg);
+      }
+      to {
+        transform: rotateY(359deg);
+      }
+    }
+    .front {
+      transform: rotateY(90deg) translateX(-50%) rotateY(-90deg);
+    }
+    .right {
+      transform: translateX(50%) rotateY(90deg)
+    }
+    .left {
+      transform: translateX(-50%) rotateY(-90deg)
+    }
+    .top {
+      transform: translateY(-50%) rotateX(90deg)
+    }
+    .bottom {
+      transform: translateY(50%) rotateX(-90deg)
+    }
+    .back {
+      transform: rotateY(90deg) translateX(50%) rotateY(90deg);
     }
   </style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/104/three.min.js"></script>
