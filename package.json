@@ -20,7 +20,7 @@
   "devDependencies": {
     "chokidar": "^3.0.0",
     "express": "^4.17.1",
-    "front-matter": "^3.0.2",
+    "gray-matter": "^3.0.2",
     "git-hooks": "^1.1.10",
     "mustache": "^3.0.1",
     "open": "^6.3.0",
