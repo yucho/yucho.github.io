@@ -4,8 +4,8 @@
   "version": "1.0.0",
   "description": "Yucho Ho's personal website",
   "scripts": {
-    "build": "node index.js",
-    "server": "node lib/server.js"
+    "clean": "rimraf dest",
+    "server": "npm run clean; node lib/server.js"
   },
   "repository": {
     "type": "git",
@@ -20,10 +20,11 @@
   "devDependencies": {
     "chokidar": "^3.0.0",
     "express": "^4.17.1",
-    "gray-matter": "^3.0.2",
     "git-hooks": "^1.1.10",
+    "gray-matter": "^3.0.2",
     "mustache": "^3.0.1",
     "open": "^6.3.0",
+    "rimraf": "^2.6.3",
     "tmp": "^0.1.0",
     "upath": "^1.1.2"
   }
