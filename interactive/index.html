@@ -13,6 +13,8 @@
   <section class="container">
     <div id="icon"></div>
     <button class="start">Loading...</button>
+    <h2 class="title">About this project</h2>
+    <p class="about">Interactive is my attempt at creating 3D graphics using WebGL technology. Simply put, it is a collection of slides that contains different interactive images. You can use mousewheel/swipe to switch slides.</p>
   </section>
 
   <script>
@@ -70,6 +72,7 @@
   <style>
     * {
       box-sizing: border-box;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
     .html, .body {
       width: 100%;
@@ -78,6 +81,7 @@
       padding: 0;
     }
     .start {
+      display: block;
       font-size: 30px;
       color: #eee;
       background: #222;
@@ -92,7 +96,6 @@
       color: #fff;
       background: #444;
       border: 1px solid #555;
-      padding: 48px;
     }
     .container {
       position: absolute;
@@ -156,6 +159,17 @@
     }
     .back {
       transform: rotateY(90deg) translateX(50%) rotateY(90deg);
+    }
+
+    .title, .about {
+      text-align: center;
+    }
+    .title {
+      margin-top: 30px;
+      font-size: 16px;
+    }
+    .about {
+      font-size: 12px;
     }
   </style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/104/three.min.js"></script>
