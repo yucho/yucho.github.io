@@ -1,0 +1,2349 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "7394coz7i9hx"
+          }
+        },
+        "id": "blogPost",
+        "type": "ContentType",
+        "createdAt": "2021-01-03T02:15:24.028Z",
+        "updatedAt": "2021-01-03T06:44:07.190Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 11,
+        "publishedAt": "2021-01-03T06:44:07.190Z",
+        "firstPublishedAt": "2021-01-03T02:15:24.547Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4MZLRlzSN0CO2G5XaevT6a"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4MZLRlzSN0CO2G5XaevT6a"
+          }
+        },
+        "publishedCounter": 6,
+        "version": 12,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4MZLRlzSN0CO2G5XaevT6a"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "Posts",
+      "description": "Written articles such as blog posts, news columns, tech articles, etc.",
+      "fields": [
+        {
+          "id": "title",
+          "name": "title",
+          "type": "Symbol",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "createdDate",
+          "name": "created date",
+          "type": "Date",
+          "localized": true,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "body",
+          "name": "body",
+          "type": "RichText",
+          "localized": true,
+          "required": false,
+          "validations": [
+            {
+              "nodes": {
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "images",
+          "name": "images",
+          "type": "Array",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+            ],
+            "linkType": "Asset"
+          }
+        },
+        {
+          "id": "tags",
+          "name": "tags",
+          "type": "Array",
+          "localized": true,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "7394coz7i9hx"
+          }
+        },
+        "id": "author",
+        "type": "ContentType",
+        "createdAt": "2021-01-05T07:49:51.683Z",
+        "updatedAt": "2021-01-05T07:49:55.705Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2021-01-05T07:49:55.705Z",
+        "firstPublishedAt": "2021-01-05T07:49:55.705Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4MZLRlzSN0CO2G5XaevT6a"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4MZLRlzSN0CO2G5XaevT6a"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4MZLRlzSN0CO2G5XaevT6a"
+          }
+        }
+      },
+      "displayField": "name",
+      "name": "Author",
+      "description": "",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "slug",
+          "name": "Slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "unique": true
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "bio",
+          "name": "Bio",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "avatar",
+          "name": "Avatar",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "linkMimetypeGroup": [
+                "image"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "featured",
+          "name": "Featured",
+          "type": "Boolean",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "social",
+          "name": "Social",
+          "type": "Array",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "regexp": {
+                  "pattern": "^(ftp|http|https):\\/\\/(\\w+:{0,1}\\w*@)?(\\S+)(:[0-9]+)?(\\/|\\/([\\w#!:.?+=&%@!\\-\\/]))?$"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "7394coz7i9hx"
+          }
+        },
+        "id": "image",
+        "type": "ContentType",
+        "createdAt": "2021-01-12T09:46:59.366Z",
+        "updatedAt": "2021-01-12T09:47:02.665Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2021-01-12T09:47:02.665Z",
+        "firstPublishedAt": "2021-01-12T09:47:00.079Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4MZLRlzSN0CO2G5XaevT6a"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4MZLRlzSN0CO2G5XaevT6a"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4MZLRlzSN0CO2G5XaevT6a"
+          }
+        }
+      },
+      "displayField": null,
+      "name": "Image",
+      "description": "Image",
+      "fields": [
+        {
+          "id": "image",
+          "name": "image",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        }
+      ]
+    }
+  ],
+  "tags": [
+  ],
+  "editorInterfaces": [
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "7394coz7i9hx",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 12,
+        "createdAt": "2021-01-03T02:15:24.636Z",
+        "createdBy": {
+          "sys": {
+            "id": "4MZLRlzSN0CO2G5XaevT6a",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2021-01-03T06:44:07.929Z",
+        "updatedBy": {
+          "sys": {
+            "id": "4MZLRlzSN0CO2G5XaevT6a",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "blogPost",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "createdDate",
+          "widgetId": "datePicker",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "body",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "images",
+          "widgetId": "assetLinksEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "tags",
+          "widgetId": "tagEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "7394coz7i9hx",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2021-01-05T07:49:55.826Z",
+        "createdBy": {
+          "sys": {
+            "id": "4MZLRlzSN0CO2G5XaevT6a",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2021-01-05T07:49:56.559Z",
+        "updatedBy": {
+          "sys": {
+            "id": "4MZLRlzSN0CO2G5XaevT6a",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "author",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "name",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "bio",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "avatar",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "featured",
+          "widgetId": "boolean",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "social",
+          "settings": {
+            "helpText": "Insert comma separated values"
+          },
+          "widgetId": "listInput",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "7394coz7i9hx",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2021-01-12T09:47:00.216Z",
+        "createdBy": {
+          "sys": {
+            "id": "4MZLRlzSN0CO2G5XaevT6a",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2021-01-12T09:47:03.089Z",
+        "updatedBy": {
+          "sys": {
+            "id": "4MZLRlzSN0CO2G5XaevT6a",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "image",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "image",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "7394coz7i9hx"
+          }
+        },
+        "id": "5jRdWYubQ9VRXX33oVoSwM",
+        "type": "Entry",
+        "createdAt": "2021-01-03T02:19:01.816Z",
+        "updatedAt": "2021-01-04T05:34:15.286Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 448,
+        "publishedAt": "2021-01-04T05:34:15.286Z",
+        "firstPublishedAt": "2021-01-03T06:54:14.601Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4MZLRlzSN0CO2G5XaevT6a"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4MZLRlzSN0CO2G5XaevT6a"
+          }
+        },
+        "publishedCounter": 4,
+        "version": 449,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4MZLRlzSN0CO2G5XaevT6a"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blogPost"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "I Found a Newborn Kitten"
+        },
+        "createdDate": {
+          "en-US": "2016-07-23T00:00-08:00"
+        },
+        "body": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "value": "This post contains scenes that some readers may find disturbing.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "A pet's worst nightmare is the owner.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Admittedly, some people do a good job looking after pets. I sure as hell don't. Looking back on all the unfortunate animals that were introduced into my childhood, I seem to just suck at raising living things. Let me share with you a story.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "My sister loves animals. She kept begging our parents for pets, and totally did not clean up after them. (Correction: she did feed them but did not clean their poops. Yeah, stealing all the credits.) So, we ended up having multiple dogs, a ferret, various birds, lots of hamsters, and a whole spectrum of aquatic animals. Most of them either died not of old age or ran away to some newfound land.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "I still remember back in high school, our hamster suddenly started twitching insanely like a scene in a horror movie and dropped dead. We held the hamster in our hands and rubbed its belly for a while, hoping that would magically revive it or something. The magic didn't happen, and my sister wept all night long. The cause of death was quite mysterious except in hindsight, I was cleaning a room with a cleaner spray an hour before the incident. The hamster cage was in the room. Hmm.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "I was 6 years old when I was feeding a baby sparrow with a syringe full of grainy seeds. I applied too much pressure and those tiny grains bursted open its furry throat. ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "value": "Pop!",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": " Oops. That was a trippy moment. Yellow grains oozed out from a slit that wasn't supposed to be there.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "When I was 12, my family loved our betta fish so much that we built a pond in the backyard and set him loose. A wild duck came flying and ate him the following day. Has a good intention ever gone wrong?",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "And then there were Rollie the ferret, Sally the dog, and... I'll stop here because I've shamed myself enough and out of kindness to my readers. Because in fact I have endless supply of stories.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "All the failures aside, time has passed and I became a contributing member of society. All the sitting from coding at work and bottles of beer at night was not helping with my building up of beer belly. So, I started jogging regularly. I was jogging uphill one day, and suddenly the faintest ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "value": "meow",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": " caught my ear. I paused for a bit to look for the source of the sound. And there it was in the bush, a kitten no bigger than a man's hand and as white as milk, helplessly trembling. It was a scorching summer afternoon.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": "\"When a human picks up a kitten, the mother cat abandons it\" — some dude",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "paragraph"
+                  }
+                ],
+                "nodeType": "blockquote"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "That's what I heard before. But it was so weak and helpless. But a human intervention with wild animals is generally frowned upon, right? I kept some distance and just gazed at it moronically. I didn't want to carelessly approach the tiny thing and ruin its life. I scouted for the mommy cat but to no avail. The kitten kept meowing. The kitten looked at me. Oh no, it's limping this way. What am I supposed to do!?",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Maybe the mother cat had already abandoned it. Maybe she was dead. I wouldn't know. I snuggled the little kitten into my arms and started walking home. At that very moment, a wild hawk just randomly took a nosedive and hunted down a northern mockingbird, right in front of my face. Just, holy crap. That was the first time I saw a live scene of hunting by a wild hawk. Apparently, it had to happen that day at that moment. The hawk was chilling on a dying critter on a utility pole, crushing the prey with its sharp claws. Another mocking bird, most likely the victim's mate, ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "uri": "https://www.youtube.com/watch?v=2cYtnjCCIXc"
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": "fiercely tackled the hawk",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "hyperlink"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": " over and over again in a feeble attempt to save the partner's dear life. Usually, I would appreciate such nature's drama. But then when I'm holding a kitten in my arms, it was totally uncalled for. I looked up at the sky. There were at least a dozen more hawks flying in circle. It was the longest walk home of my life.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "The kitten was obviously undernourished, so I bought a bunch of Pedigree pet food that looked better than my diet. Then I took it to a vet right across the street. On a side note, I lived in the area for 7 years and never knew that the vet was there. Funny how indifference leads to ignorance. Anyway, the medical diagnosis revealed that the kitten was a 3 week old boy who barely weaned off breastfeeding, which by the way, if that wasn't the case, then nurturing him would have been infinitely harder. He was lucky.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "I owned him for a month or so. During that period, my boring empty room got filled up with a toy mouse, cat tower, portable vacuum cleaner, litter box, bucket full of absorbent sand, scratch pads, bags of catnip and cat food, prescription medicine from the veterinary, DSLR camera to capture every cutesy moment, and SD cards full of cat videos.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "I named him ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "value": "Big Boss",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": " because I was bad at naming, and ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "uri": "https://en.wikipedia.org/wiki/Metal_Gear_Solid_V:_Ground_Zeroes"
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": "Metal Gear Solid V",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "hyperlink"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": " was recently released at the time. I made a flier to find a new owner who was willing to adopt Big Boss. Why I didn't keep him? Well, my track record kinda sucked when it comes to pets. I had zero confidence in my ability to fulfill a responsibility.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Eventually, the news traveled, and my ex-housemate's relative's friend's daughter (and her husband) came over to take away Big Boss. I boxed up everything and told them to clip his nails if he'd be a house cat, administer a flea repellent, and finish up the remaining of his vaccinations. \"Are you sure you want to give him up?\" they asked me as they saw my face. I was uncertain of the answer, but I nodded, smiled, and walked them out the door.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "They got in a car. Big Boss kept meowing. I acted tough but cried like a baby inside. See ya, little man.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "* * *",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "One year later, I was chilling at Starbucks reading my diary. Actually, it barely qualified as a diary because each entry reads like \"yoga'ed this morning\" or \"dad visited today.\" Still, I was amazed at somehow human brains can take those one-liner inputs, trigger a chain reaction of memories, and miraculously reanimate a full-blown story of the account in our minds. Unfathomable.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Reading on, I got curious about what the very first entry was. Why did I even start keeping a diary? There must have been an incredible event that motivated me to journal my life. After flipping through hundreds of pages, I finally reached the beginning.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "It read: \"5/26/2015 I picked up a cat.\"",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        },
+        "tags": {
+          "en-US": [
+            "life"
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "7394coz7i9hx"
+          }
+        },
+        "id": "1lKMv6Bd3RRHC7DbnJxivO",
+        "type": "Entry",
+        "createdAt": "2021-01-03T06:54:58.724Z",
+        "updatedAt": "2021-01-04T05:33:18.917Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 313,
+        "publishedAt": "2021-01-04T05:33:18.917Z",
+        "firstPublishedAt": "2021-01-03T09:42:14.252Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4MZLRlzSN0CO2G5XaevT6a"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4MZLRlzSN0CO2G5XaevT6a"
+          }
+        },
+        "publishedCounter": 6,
+        "version": 314,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4MZLRlzSN0CO2G5XaevT6a"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blogPost"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "The Day I Got into a Bar Fight"
+        },
+        "createdDate": {
+          "en-US": "2016-09-20T00:00-08:00"
+        },
+        "body": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "value": "Paul & Eddie's",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": " was a 7 minute walk from my high school. It's a bar with a big neon sign that says \"pool and darts.\" As a kid, I always thought this place sold swimsuits or something because I misinterpreted what \"pool\" meant. It was a decade later when my friend took me to the place when I realized my prepubescent idiocy.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Anyway, my friend James and I were having a blast at this bar one night. They charged a dollar for a game of pool and the losers would pay for the next round. We came across a duo who were the regulars there, and we challenged them to a game of eight-ball. One of them was a young laid-back white bloke in sagging jeans, and another was a huge Latino dude. For the sake of storytelling, I'm gonna refer to them as ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "value": "Saggy",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": " and ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "value": "Hugo",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": " respectively, inspired by their looks.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Hugo saw me and yelled, \"Okajima!\" He yelled it numerous times like an idiot. I was confused very much. I shouted back, \"Jose!\" and he would burst into laughter. Intelligence level was quick to plummet. I didn't mind at all. The team James and I was on a 6 game win streak.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "\"You guys are ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "value": "sandbagging",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "!\" Saggy complained, \"Sandbaggers.\"",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Hugo said, \"Ey, I like you boys. I'll treat a shot for everyone,\" and proceeded to open a tab for more drinks. We all got a shot of whisky and clinked our glasses. \"Cheers!\"",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "\"I got a bar joke,\" Saggy smirked, \"A stork brings a white baby. A crow brings a black baby. What bird brings no baby?\"",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "I used all my intoxicated brainpower in vain. \"I give up.\"",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "\"A ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "value": "swallow",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": ". Get it?\" Saggy raised his chin, opened his mouth, and jerked his hand back and forth in front of it.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "\"He doesn't get it, ha-ha!\" James had me in a headlock and knuckled my head. God damn it, James.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "We kept playing pool. It was Saggy's turn to hit the cue ball. I was getting drunk and happy. I started to say random things like: \"If you make this shot, I'm gonna hug you.\"",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Saggy gave me a blank stare. Then he grabbed the waist of his jeans, lowered it even more, and said, \"I'm ready.\"",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "At this point, everyone's IQ was probably negative one hundred. I was too hammered to even stand up straight, but we kept going nonetheless. No one was serious anymore, and things got out of control. Seeing all that, Hugo finally made a move. \"Brothers,\" He said, \"this next round is a ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "value": "hundred dollars per game.",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "\"",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "There wasn't a more obvious hustle. Hugo clearly wanted to earn some cash. But being the knucklehead I was, I didn't see it coming at all. I mean, we won 6 games in a row. We were better players than them, right? James and I were psyched out, though. We were broke college students at the time, and we had no balls to bet a Benjamin Franklin on this stupid game. We didn't accept the challenge. In fact, we were getting ready to sober up with some Chinese food afterwards. So we headed to the door.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "At that moment, Hugo suddenly snapped. \"Ey, I don't like your ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "value": "hugging",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": " shit, man!\" He grabbed me by the chest and hurled me into a table. I fell on the floor, totally not comprehending at all what was happening. The crowd was quick to react to the scene. A few men came running over to grab Hugo from behind to stop him.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Saggy walked up to me and said, \"Yeah, you're fucked up. Get the hell out of here.\" He then threw me out of the bar.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "My good friend James didn't get involved in any of this. He was already in his car. God damn it, James.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "* * *",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "In retrospect, I'm glad that I didn't hit back—not that I had the guts to do it. Things could have gone wrong in the heat of the moment. My ex-coworker once told me a story about his son who turned 21. He was 6 foot 3, strong, handsome, and ready for life. He went to a bar one night, picked a fight with some asshat gangster, and got shot by a gun. He died. That's it. End of the story. Sometimes I wonder if the real culprit is our ill-suited ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "value": "macho",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": " that's doing harm to men.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "To this day, I think about Hugo every now and then. I wonder how he is doing in life. Weird thing is that I actually wish him well despite all that happened. There once was a huge Latino man who said he liked me, treated me to a shot of whiskey, and then picked a fight with me. That's part of me now.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "My dad goes out drinking with a bunch of friends every night. I join him every now and then, and we have good times together. One night, he turned to me and smiled. \"Remember, son,\" he said, \"Whoever makes you drink is not your friend.\"",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        },
+        "tags": {
+          "en-US": [
+            "life"
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "7394coz7i9hx"
+          }
+        },
+        "id": "4ktp2Ojn6pKXW8Z8SVK1UG",
+        "type": "Entry",
+        "createdAt": "2021-01-03T09:46:10.423Z",
+        "updatedAt": "2021-01-04T05:37:49.770Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 428,
+        "publishedAt": "2021-01-04T05:37:49.770Z",
+        "firstPublishedAt": "2021-01-04T05:20:40.941Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4MZLRlzSN0CO2G5XaevT6a"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4MZLRlzSN0CO2G5XaevT6a"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 429,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4MZLRlzSN0CO2G5XaevT6a"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blogPost"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Second Week in Paris: My Bag Got Stolen"
+        },
+        "createdDate": {
+          "en-US": "2017-08-24T00:00-08:00"
+        },
+        "body": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "So, I flew to Paris on Monday and took a 2 week French class. I made friends much younger than me at school. (I was 28 at the time of writing.) I found out that high school kids these days have the luxury of studying abroad during summer break for fun. I guess that's a good thing.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "The way they counted floors came as a surprise. In France, the ground level counts as 0 unlike in the US where the ground is 1. Because of this, it took me a while to find the correct classroom on my first day of school.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Also, everyone smokes in Paris. Like, ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "value": "everyone",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": ". Parisian soil is practically made of cigarette buds. Their breakfast is basically espresso and cigs. Also, I ate more baguettes during the trip than all my life and my previously reincarnated lives combined.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "I went on a picnic with my new friends at ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "uri": "https://goo.gl/maps/PDyQfQCvCoyBmu1K6"
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": "Champ de Mars",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "hyperlink"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": ", a beautiful garden by the Eiffel Tower. One friend told me that he was the winner of a men’s beauty pageant. He then pulled out his phone and showed us the video. We watched it as we sipped ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "value": "Kronenbourg 1664",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": ".",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "We were having a good time. Time flies when you're having fun. The clock turned 11pm. The Eiffel Tower light show that happens every hour on the hour began. The bright sparkling lights went on for 5 minutes and stole everyone’s attention. After the show, we were satisfied and ready to go home—except that my bag was nowhere to be seen.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Ah, crap.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Precisely my first thought. My friends and family warned me about pickpockets and thieves in Europe before this trip. They told me many stories about how they fell victim to the perpetrators. But who would have thought that I would be the next target? I subconsciously dismissed their stories because I thought they weren't careful enough or something. Well, I shouldn’t have done that, should I? The warning was for real, and it's too late now. My wallet, passport, textbooks, GoPro, everything, gone.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "It was depressing. I started to fantasize that the thief was a poor mother of three who was unable to feed her babies. Maybe she laid her hands on my possessions out of desperation  in attempt to survive another day. That would console me a bit. But it could just as well have been some jerk who likes to steal things. Who knows.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "The days following the incident were hectic. I had to borrow money from friends, invalidate the lost credit cards, request replacement cards to be shipped overseas, report the incident to ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "value": "Commissaire de Police",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": " (i.e. police officer), apply for an emergency passport, contact my travel insurance company, repurchase school supplies, and so on. I really appreciate the milk of human kindness in my French friends who helped me with some of these tasks. They saved my life for sure.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "After all that, I kissed Paris and my friends goodbye and left for the next travel destination.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "* * *",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "The sun was high in Barcelona sky. Beautiful women laid topless in golden beach. Every day was such a perfect day. Yet, I was in the living room at my friend’s house playing ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "value": "Splatoon 2",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": ". Seriously, the game was addicting.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "By the way, how they count floors was even crazier here in Spain. The ground level is \"B\". The floor above it is 0, then 1, and so on. I was very disoriented.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Anyway, so I was playing the game. But then my friend Alejandro was like dude, you need to get your ass out, and he drove me to the best paella restaurant in town. He then took me to the famous ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "value": "Sagrada Familia",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": ". We arrived too late, though. The gate was closed and we couldn't get in.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "We were properly bummed. After aimlessly walking around the magnificent basilica, we sat in the patio of Costa Coffee to take a break. Across the yard sat a young homeless man. He was leaning against the wall facing the sidewalk. Whenever a pedestrian walked by, he energetically greeted them despite getting ignored half the time. I was sitting at a coffee table hoping that he wouldn’t look at us. He then looked at us, smiled, and begged for spare change. I had nothing better to do, so I walked over to the man, sat next to him, and began chatting with him. He didn’t speak English, so I asked Alejandro to translate for me.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "\"Hello,\" I said, \"If you don’t mind telling me, I want to know why you became homeless.\"",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "The man turned to Alejandro and gave a long explanation in Spanish.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "\"He said,\" said Alejandro, \"that he came from Romania to find a job in Barcelona. But he can’t afford a worker VISA, so he first has to beg for money to pay for that. His dad is diabetic, so he also needs to buy medicine.\"",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "I handed him what little cash I had left, and turned to Alejandro. \"Tell him this is all I have. My wallet got stolen in Paris, and I’m really short on cash.\"",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "The homeless man and Alejandro chatted for a while. He then turned to me to fill me in.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "\"He said the thief who stole your bag is probably his kind of people. Refugees who failed to establish themselves in other countries end up stealing. Because it's the easy way out. It takes courage to be a beggar. You get looked down on by people. You annoy people. He said he is brave enough to do it, and he apologizes to you on behalf of his compatriots.\"",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "I didn't know what to say. We hugged each other at the end.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "That night, I thought about all the things that had happened. The incident in Paris. The encounter with the homeless man. I realized that I no longer held a grudge against the thief. All I had left was a sense of powerlessness over situations that drove people into a corner. The thief is probably slowly destroying himself every time he commits a crime. And there was nothing I can do about it.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Maybe my fantasy about the mother of three wasn't too far off, after all.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        },
+        "tags": {
+          "en-US": [
+            "life"
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "7394coz7i9hx"
+          }
+        },
+        "id": "6alXrn8Fw1Y7HKFLnJAOaQ",
+        "type": "Entry",
+        "createdAt": "2021-01-05T07:53:02.245Z",
+        "updatedAt": "2021-01-05T08:02:28.523Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 31,
+        "publishedAt": "2021-01-05T08:02:28.523Z",
+        "firstPublishedAt": "2021-01-05T08:02:28.523Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4MZLRlzSN0CO2G5XaevT6a"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4MZLRlzSN0CO2G5XaevT6a"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 32,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4MZLRlzSN0CO2G5XaevT6a"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "author"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Yucho Ho"
+        },
+        "slug": {
+          "en-US": "yucho"
+        },
+        "bio": {
+          "en-US": "Hi, I'm a founding engineer of HipHerd, a trip planning app. I like to travel the world and make cool software."
+        },
+        "avatar": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5vAow5ZOwaCtBCeXakLuyt"
+            }
+          }
+        },
+        "featured": {
+          "en-US": false
+        },
+        "social": {
+          "en-US": [
+            "https://twitter.com/yucho_en"
+          ]
+        }
+      }
+    }
+  ],
+  "assets": [
+  ],
+  "locales": [
+    {
+      "name": "English (United States)",
+      "code": "en-US",
+      "fallbackCode": null,
+      "default": true,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "5bRBoJCUkKImwZF38Hc9eG",
+        "version": 1,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "7394coz7i9hx"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "master",
+            "uuid": "7eff4362-8f33-4d35-9aa8-715702e3fa3a"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4MZLRlzSN0CO2G5XaevT6a"
+          }
+        },
+        "createdAt": "2021-01-03T02:09:42Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4MZLRlzSN0CO2G5XaevT6a"
+          }
+        },
+        "updatedAt": "2021-01-03T02:09:42Z"
+      }
+    }
+  ],
+  "webhooks": [
+  ],
+  "roles": [
+    {
+      "name": "Editor",
+      "description": "Allows editing, publishing and archiving of content",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ],
+        "Environments": [
+        ],
+        "EnvironmentAliases": [
+        ],
+        "Tags": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "5bSilGkKvN1ITUSY0rqB3k",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "7394coz7i9hx"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4MZLRlzSN0CO2G5XaevT6a"
+          }
+        },
+        "createdAt": "2021-01-03T02:09:42Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4MZLRlzSN0CO2G5XaevT6a"
+          }
+        },
+        "updatedAt": "2021-01-03T02:09:42Z"
+      }
+    }
+  ]
+}

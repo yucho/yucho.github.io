@@ -1,0 +1,26 @@
+{
+  "spaceId": "7394coz7i9hx",
+  "environmentId": "master",
+  "managementToken": "foPTr0fCU2Z4wTxLJYH95bv9n1pztAUu95hwHC0uNC0",
+  "exportDir": ".",
+  "saveFile": true,
+  "contentFile": "export.json",
+  "includeDrafts": false,
+  "includeArchived": false,
+  "skipContentModel": false,
+  "skipContent": false,
+  "skipRoles": false,
+  "skipWebhooks": false,
+  "contentOnly": false,
+  "queryEntries": [
+  ],
+  "queryAssets": [
+    "fields.title=Example"
+  ],
+  "downloadAssets": false,
+  "host": "api.contentful.com",
+  "rawProxy": false,
+  "maxAllowedLimit": 1000,
+  "errorLogFile": "./error.log",
+  "useVerboseRenderer": false
+}
